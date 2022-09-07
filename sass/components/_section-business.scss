@@ -1,4 +1,16 @@
 .business {
+@media screen and (max-width: $max-tablet){
+position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}   
   @extend %centered;
   @include sectionPad($size-top: 47px, $size-bottom: 94px)
 }

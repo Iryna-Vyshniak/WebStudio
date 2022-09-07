@@ -41,12 +41,24 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    // max-width: 1200px;
    
     padding-right: 15px;
     padding-left: 15px;
     margin-left: auto;
     margin-right: auto;
+
+    @media screen and (min-width: $mobile) {
+        min-width: $mobile;
+    }
+
+    @media screen and (min-width: $tablet) {
+        min-width: $tablet;
+    }
+
+    @media screen and (min-width: $desktop) {
+         min-width: $desktop;
+    }
 }
 
 .row {
@@ -66,6 +78,7 @@ body {
 
 .section {
     @include sectionPad($size-top: 94px, $size-bottom: 94px);
+    @extend %list;
 }
 
 .section__title {
@@ -97,10 +110,36 @@ body {
 }
 
 .section-set {
-// @include sectionSetFlex($type: flex, $wrap: nowrap);
-  &__item:not(:last-child) {
-        margin-right: 30px;
+@extend %list;
+@media screen and (min-width: $tablet) {
+        @include sectionSetFlex();
+        justify-content: center;
+        margin: -15px;
     }
+
+    // @media screen and (min-with: $desktop) {
+        
+    // }
+
+//   &__item:not(:last-child) {
+//         margin-right: 30px;
+//     }
+}
+
+
+.section-set__item{
+   @media screen and (min-width: $tablet) {
+    flex-basis: calc(100% - 2 * 30px) / 2;
+    margin: 15px;
+    }
+    @media screen and (min-width: $desktop) {
+        flex-basis: calc(100% - 3 * 30px) / 3;
+    }
+        &:not(:last-child) {
+            @media screen and (max-width: $max-mobile){
+            margin-bottom: 30px;
+    }
+  }
 }
 
 .section-set__title {
