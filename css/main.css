@@ -1152,7 +1152,7 @@ body {
 
 .project-cards__title {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
