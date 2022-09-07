@@ -1,0 +1,26 @@
+.site-logo {
+    @extend %link;
+    display: block;
+
+    color: $black-logo;
+    font-family: 'Raleway', sans-serif;
+    font-size: $logo-font-size;
+    font-weight: $primary-bold;
+    line-height: 1.2;
+
+    &__accent {
+            color: $accent-dodger-blue;
+        }
+}
+
+.page-footer__logo {
+    display: block;
+    margin-bottom: 20px;
+
+    color: $white-color;
+
+    &__accent {
+            color: $accent-dodger-blue;
+        }
+}
+

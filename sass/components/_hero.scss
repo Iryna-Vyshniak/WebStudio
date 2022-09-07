@@ -1,0 +1,30 @@
+.hero {
+    @extend %centered;
+
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    background-color: $bg-gunmetal;
+
+    &__title {
+            margin-top: 0;
+            margin-bottom: 30px;
+    
+            color: $white-color;
+            font-size: $hero-font-size;
+            font-weight: $hero-weight;
+            line-height: 1.4;
+    
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+        }
+}

@@ -1,0 +1,27 @@
+.section-set--clients{
+    @extend %list;
+}
+
+.section-set__logo--clients {
+    @include centeredFlex();
+    justify-content: center;
+    min-width: 170px;
+    min-height: 92px;
+
+    color: $border-clients;
+    border: 1px solid $border-clients;
+    border-radius: 4px;
+
+    @include transition();
+    transition-property: color, border;
+    &:hover,
+    &:focus,
+    &:active {
+        color: $accent-dodger-blue;
+        border: 1px solid $accent-dodger-blue;
+    }
+}
+
+.section-set__icon--clients {
+    fill: currentColor;
+}

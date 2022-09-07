@@ -1,0 +1,31 @@
+.button {
+    /* border: 1px solid transparent; */
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.button__main-button {
+    @extend %centered;
+    min-width: 216px;
+    padding: 10px 32px;
+
+    border-radius: 4px;
+    background-color: $accent-dodger-blue;
+    color: $white-color;
+    font-size: $primary-font-size;
+    font-weight: $primary-bold;
+
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    @include transition ();
+    transition-property: background-color, box-shadow;
+
+    &:active,
+    &:hover,
+    &:focus {
+            background-color: $hero-btn-active;
+            box-shadow: $hero-btn-shadow;
+        }
+}
+

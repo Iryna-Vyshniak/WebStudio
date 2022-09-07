@@ -1,0 +1,45 @@
+.member-team {
+    @extend %centered;
+    @include sectionPad();
+    background-color: $bg-ghost-white;
+}
+
+.section-set--team{
+     @extend %list;
+}
+.section-set__item--member {
+    max-width: 270px;
+   
+    background-color: $white-color;
+    box-shadow: $team-box-shadow;
+    border-radius: 0 0 4px 4px;
+
+    line-height: 1.2;
+}
+
+.section-set__images--member {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.member-content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.member-content__name {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    font-size: $primary-font-size;
+    font-weight: $accent-weight;
+}
+
+
+.member-content__description {
+    @extend %description;
+    margin-bottom: 16px;
+}

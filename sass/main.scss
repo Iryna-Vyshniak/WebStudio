@@ -1,0 +1,43 @@
+@import "./utils/variables";
+@import "./base/normalize";
+
+@import "./utils/mixin";
+@import "./utils/placeholder";
+
+@import "./utils/common";
+
+@import "./components/page-header";
+@import "./components/site-nav";
+@import "./components/site-logo";
+@import "./components/site-contacts";
+@import "./components/hero";
+@import "./components/button";
+
+@import "./components/section-advantages";
+@import "./components/section-business";
+@import "./components/section-team.scss";
+@import "./components/socials-set.scss";
+@import "./components/section-clients";
+
+@import "./components/page-footer";
+@import "./components/footer-socials";
+@import "./components/footer-signup";
+
+@import "./components/modals";
+@import "./components/modals-form";
+
+@import "./components/filter-cards";
+@import "./components/project-cards";
+
+
+
+
+
+
+
+
+
+
+
+
+

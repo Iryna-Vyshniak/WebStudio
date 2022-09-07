@@ -1,0 +1,58 @@
+/* Підпишіться на розсилку */
+
+.footer-signup {
+    padding: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+}
+
+.signup {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.signup__slogan:not(:last-child) {
+    margin-right: 12px;
+}
+
+.signup__slogan-email {
+    min-width: 358px;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    height: 50px;
+    padding: 15px 16px;
+
+    border: 1px solid $signup-border;
+    filter: drop-shadow(0px 4px 4px $sign-up-filter);
+    border-radius: 4px;
+    background-color: transparent;
+    color: $white-transparent-color;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: $primary-weight;
+    font-size: $primary-font-size;
+
+    line-height: 1.2;
+}
+
+.signup__button {
+    position: relative;
+    @include centeredFlex();
+
+    min-width: 200px;
+    height: 50px;
+    padding: 10px 28px;
+}
+
+.signup__link {
+  position: absolute;
+  right: 28px;
+  display: inline-flex;
+  margin-left: 10px;
+}
+
+.signup__icon {
+    fill: $white-color;
+}

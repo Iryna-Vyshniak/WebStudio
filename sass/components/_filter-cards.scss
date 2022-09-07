@@ -1,0 +1,39 @@
+.filter-cards {
+    @extend %list;
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.filter-cards__item{
+    &:not(:last-child) {
+    margin-right: 8px;
+}
+}
+
+.button-filter {
+    display: block;
+    padding: 6px 22px;
+
+    background-color: $bg-ghost-white;
+    color: $primary-text-color;
+
+    font-weight: $accent-weight;
+    font-size: $primary-font-size;
+    line-height: 1.6;
+
+    border-radius: 4px;
+
+    @include transition();
+    transition-property:color, background-color, box-shadow;
+
+        &:hover,
+        &:focus,
+        &:active {
+                color: $white-color;
+                background-color: $accent-dodger-blue;
+                box-shadow: $active-shadow;
+            }
+}
+

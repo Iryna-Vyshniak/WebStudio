@@ -1,0 +1,21 @@
+.footer-socials {
+  margin-left: 70px;
+}
+
+// приєднуйтесь 
+.footer-socials__slogan {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  color: $white-color;
+  text-align: left;
+}
+
+.socials-set__link--page-footer {
+  background-color: $bg-footer-social-icons;
+  color: $white-color;
+}
+
+.socials-set__icon--page-footer {
+  fill: currentColor;
+}

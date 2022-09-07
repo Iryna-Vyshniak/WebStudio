@@ -1,0 +1,27 @@
+// .section-set
+@mixin sectionSetFlex($type: flex, $wrap: wrap){
+            display: $type;
+            flex-wrap: $wrap;
+}
+
+@mixin centeredFlex($type: flex, $centered: center){
+    display: $type;
+    align-items: $centered;
+}
+
+// .section
+@mixin sectionPad($size-top: 94px, $size-bottom: 94px) {
+    padding-top: $size-top;
+    padding-bottom: $size-bottom;
+}
+
+ @mixin transition ($duration: 250ms, $timing-function: cubic-bezier(0.4, 0, 0.2, 1)){
+    transition-duration: $duration; 
+    transition-timing-function: $timing-function;
+ }
+
+ @mixin circle($width: 44px, $height: 44px, $radius: 50%){
+ width: $width;
+ height: $height;
+ border-radius: $radius;
+}

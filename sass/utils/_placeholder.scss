@@ -1,0 +1,28 @@
+%list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+%link {
+    text-decoration: none;
+    color: inherit;
+}
+
+%description {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+%centered {
+  text-align: center;
+}
+
+%button {
+    /* border: 1px solid transparent; */
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+

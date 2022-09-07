@@ -1,0 +1,33 @@
+.socials-set {
+    @extend %list;
+    @include centeredFlex($type: inline-flex, $centered: center);
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 0;
+&__item:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
+.socials-set__link {
+    @extend %link;
+    @include centeredFlex();
+    justify-content: center;
+    @include circle();
+
+    color: $border-clients;
+    background-color: transparent;
+
+    @include transition();
+    transition-property: color, background-color;
+
+    &:hover,
+    &:focus {
+            background-color: $accent-dodger-blue;
+            color: $white-color;
+        }
+}
+
+.socials-set__icon {
+    fill: currentColor;
+}

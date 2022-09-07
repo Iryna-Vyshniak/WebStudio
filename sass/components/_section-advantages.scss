@@ -1,0 +1,27 @@
+.company-advantages {
+    @include sectionPad($size-top: 94px, $size-bottom: 47px);
+}
+
+.section-set__item--advantages {
+    @extend %list;
+    max-width: 270px;
+}
+
+.thumb-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  max-width: 270px;
+  min-height: 120px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  /* padding: 25px 101px; */
+  background: $bg-ghost-white;
+  border-radius: 4px;
+}
+
+.section-set__description {
+    @extend %description;
+    font-size: $secondary-font-size;
+}
