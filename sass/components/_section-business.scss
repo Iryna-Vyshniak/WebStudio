@@ -1,4 +1,5 @@
 .business {
+  @extend %centered;
 @media screen and (max-width: $max-tablet){
 position: absolute;
     white-space: nowrap;
@@ -10,18 +11,30 @@ position: absolute;
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
-}   
-  @extend %centered;
-  @include sectionPad($size-top: 47px, $size-bottom: 94px)
+} 
+ @media screen and (min-width: $desktop) {
+    @include sectionPad($size-top: 94px, $size-bottom: 47px);   
+}
 }
 
-.section-set__item--business {
+.business-set {
+  @media screen and (min-width: $desktop){
+  @include sectionSetFlex($type: flex, $wrap: nowrap);
+  }
+}
+
+
+.business-set__item {
   position: relative;
   @include centeredFlex();
   max-width: 370px;
+
+  &:not(:last-child) {
+      margin-right: 30px;
+    }
 }
 
-.section-set__descr {
+.set__descr {
   position: absolute;
   left: 0;
   bottom: 0;

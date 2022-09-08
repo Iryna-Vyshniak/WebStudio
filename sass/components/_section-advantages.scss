@@ -1,18 +1,53 @@
 .company-advantages {
+    @media screen and (min-width: $desktop) {
     @include sectionPad($size-top: 94px, $size-bottom: 47px);
 }
-
-.section-set__item--advantages {
-    @extend %list;
-    max-width: 270px;
 }
 
-.thumb-inner {
+.advantages-set {
+    @extend %list;
+    
+        @media screen and (min-width: $tablet) {
+            @include sectionSetFlex();
+            align-items: center;
+            justify-content: center;
+            margin: -15px;
+        }
+}
+
+.advantages-set__item {
+    @extend %list;
+    // max-width: 270px;
+outline: 4px dotted darkgreen;
+background-color: yellow;
+
+    // display: flex;
+    // flex-direction: column;
+    // flex-grow: 1;
+    // flex-shrink: 0;
+    // max-width: 370px;
+
+   @media screen and (min-width: $tablet) {
+    flex-basis: calc(100% - 1 * 30px) / 2;
+    margin: 15px;
+    }
+    @media screen and (min-width: $desktop) {
+        flex-basis: calc(100% - 3 * 30px) / 4;
+    }
+    &:not(:last-child) {
+            @media screen and (max-width: $max-mobile) {
+                margin-bottom: 30px;
+            }
+        }
+}
+
+
+.advantages-thumb {
   display: flex;
   align-items: center;
   justify-content: center;
 
-  max-width: 270px;
+  flex-basis: auto;
   min-height: 120px;
   margin-top: 0;
   margin-bottom: 30px;
@@ -21,7 +56,7 @@
   border-radius: 4px;
 }
 
-.section-set__description {
+.set__description {
     @extend %description;
     font-size: $secondary-font-size;
 }

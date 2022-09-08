@@ -4,11 +4,15 @@
     background-color: $bg-ghost-white;
 }
 
-.section-set--team{
+.team-set{
      @extend %list;
 }
-.section-set__item--member {
-    max-width: 270px;
+.team-set__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: auto;
+    // max-width: 270px;
    
     background-color: $white-color;
     box-shadow: $team-box-shadow;
@@ -17,8 +21,8 @@
     line-height: 1.2;
 }
 
-.section-set__images--member {
-    display: block;
+.team-set__images {
+    // display: block;
     margin-top: 0;
     margin-bottom: 0;
 }

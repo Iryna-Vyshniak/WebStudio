@@ -13,15 +13,15 @@ body {
     background-color: $white-color;
 }
 
-.wrapper {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
+// .wrapper {
+//     min-height: 100vh;
+//     display: flex;
+//     flex-direction: column;
+// }
 
-.page-main {
-    flex: 1 1 auto;
-}
+// .page-main {
+//     flex: 1 1 auto;
+// }
 
 /* :focus {
   outline: 2px solid rgb(0, 0, 255);
@@ -41,8 +41,7 @@ body {
 }
 
 .container {
-   max-width: 1200px;
-   outline: 4px dotted red;
+    outline: 4px dotted red;
 
     padding-right: 15px;
     padding-left: 15px;
@@ -50,19 +49,22 @@ body {
     margin-right: auto;
 
     @media screen and (min-width: $mobile) {
-        min-width: $mobile;
+        width: $mobile;
+
 
         background-color: orange;
     }
 
     @media screen and (min-width: $tablet) {
-        min-width: $tablet;
+        width: $tablet;
+
 
         background-color: lime;
     }
 
     @media screen and (min-width: $desktop) {
-         min-width: $desktop;
+         width: $desktop;
+
 
          background-color: skyblue;
     }
@@ -84,18 +86,28 @@ body {
 }
 
 .section {
-    @include sectionPad($size-top: 94px, $size-bottom: 94px);
     @extend %list;
+    @media screen and (max-width: $max-tablet){
+        @include sectionPad($size-top: 60px, $size-bottom: 60px);
+    }
+    @media screen and (min-width: $desktop) {
+        @include sectionPad($size-top: 94px, $size-bottom: 94px);
+        }
 }
 
 .section__title {
     @extend %centered;
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 
     font-size: $section-title-font-size;
     font-weight: $primary-bold;
     line-height: 1.2;
+
+@media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+}
+
 }
 
 .title {
@@ -116,43 +128,52 @@ body {
     color: $primary-text-color;
 }
 
-.section-set {
-@extend %list;
-@media screen and (min-width: $tablet) {
-        @include sectionSetFlex();
-        justify-content: center;
-        margin: -15px;
-    }
+// .section-set {
+// @extend %list;
 
-    // @media screen and (min-with: $desktop) {
-        
-    // }
-
-//   &__item:not(:last-child) {
-//         margin-right: 30px;
+// @media screen and (min-width: $tablet) {
+//         @include sectionSetFlex();
+//         align-items: center;
+//         justify-content: center;
+//         margin: -15px;
 //     }
-}
+
+//     // @media screen and (min-with: $desktop) {
+        
+//     // }
+
+// //   &__item:not(:last-child) {
+// //         margin-right: 30px;
+// //     }
+// }
 
 
-.section-set__item{
-outline: 4px dotted darkgreen;
+// .section-set__item{
+// outline: 4px dotted darkgreen;
 
+// background-color: yellow;
 
-   @media screen and (min-width: $tablet) {
-    flex-basis: calc(100% - 2 * 30px) / 2;
-    margin: 15px;
-    }
-    @media screen and (min-width: $desktop) {
-        flex-basis: calc(100% - 3 * 30px) / 3;
-    }
-        &:not(:last-child) {
-            @media screen and (max-width: $max-mobile){
-            margin-bottom: 30px;
-    }
-  }
-}
+//     display: flex;
+//     flex-direction: column;
+//     flex-grow: 1;
+//     flex-shrink: 0;
+//     // max-width: 370px;
 
-.section-set__title {
+//    @media screen and (min-width: $tablet) {
+//     flex-basis: calc(100% - 1 * 30px) / 2;
+//     margin: 15px;
+//     }
+//     @media screen and (min-width: $desktop) {
+//         flex-basis: calc(100% - 2 * 30px) / 3;
+//     }
+//         &:not(:last-child) {
+//             @media screen and (max-width: $max-mobile){
+//             margin-bottom: 30px;
+//     }
+//   }
+// }
+
+.set__title {
     margin-top: 0;
     margin-bottom: 10px;
 }
