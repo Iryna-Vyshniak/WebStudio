@@ -41,8 +41,9 @@ body {
 }
 
 .container {
-    // max-width: 1200px;
-   
+   max-width: 1200px;
+   outline: 4px dotted red;
+
     padding-right: 15px;
     padding-left: 15px;
     margin-left: auto;
@@ -50,14 +51,20 @@ body {
 
     @media screen and (min-width: $mobile) {
         min-width: $mobile;
+
+        background-color: orange;
     }
 
     @media screen and (min-width: $tablet) {
         min-width: $tablet;
+
+        background-color: lime;
     }
 
     @media screen and (min-width: $desktop) {
          min-width: $desktop;
+
+         background-color: skyblue;
     }
 }
 
@@ -128,6 +135,9 @@ body {
 
 
 .section-set__item{
+outline: 4px dotted darkgreen;
+
+
    @media screen and (min-width: $tablet) {
     flex-basis: calc(100% - 2 * 30px) / 2;
     margin: 15px;
