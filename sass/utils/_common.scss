@@ -23,9 +23,6 @@ body {
 //     flex: 1 1 auto;
 // }
 
-/* :focus {
-  outline: 2px solid rgb(0, 0, 255);
-} */
 
 .visually-hidden {
     position: absolute;
@@ -41,8 +38,6 @@ body {
 }
 
 .container {
-    outline: 4px dotted red;
-
     padding-right: 15px;
     padding-left: 15px;
     margin-left: auto;

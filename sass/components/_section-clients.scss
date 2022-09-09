@@ -9,9 +9,6 @@
 }
 
 .clients-set__item{
-outline: 4px dotted darkgreen;
-background-color: yellow;
-
   @media screen and (max-width: $max-mobile){
     flex-basis: calc((100% - 1 * 30px) / 2);
     margin-right: 30px;

@@ -18,9 +18,6 @@
 .advantages-set__item {
     @extend %list;
     // max-width: 270px;
-outline: 4px dotted darkgreen;
-background-color: yellow;
-
    @media screen and (min-width: $tablet) and (max-width: $max-tablet){
     flex-basis: calc((100% - 1 * 30px) / 2);
     margin-right: 30px;

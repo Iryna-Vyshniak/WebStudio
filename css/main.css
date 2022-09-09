@@ -292,9 +292,6 @@ body {
   background-color: #ffffff;
 }
 
-/* :focus {
-  outline: 2px solid rgb(0, 0, 255);
-} */
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -309,7 +306,6 @@ body {
 }
 
 .container {
-  outline: 4px dotted red;
   padding-right: 15px;
   padding-left: 15px;
   margin-left: auto;
@@ -583,10 +579,6 @@ body {
   }
 }
 
-.advantages-set__item {
-  outline: 4px dotted darkgreen;
-  background-color: yellow;
-}
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .advantages-set__item {
     flex-basis: calc((100% - 30px) / 2);
@@ -795,10 +787,6 @@ body {
   justify-content: center;
 }
 
-.clients-set__item {
-  outline: 4px dotted darkgreen;
-  background-color: yellow;
-}
 @media screen and (max-width: 767.98px) {
   .clients-set__item {
     flex-basis: calc((100% - 30px) / 2);
@@ -1220,24 +1208,24 @@ body {
 }
 
 .project-cards__item {
-  outline: 4px dotted darkgreen;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: box-shadow;
-  margin-right: auto;
-  margin-left: auto;
 }
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .project-cards__item {
     flex-basis: calc((100% - 30px) / 2);
-    margin-right: 30px;
+    margin-right: 0;
+  }
+  .project-cards__item:not(:last-child) {
     margin-bottom: 30px;
+    margin-right: 30px;
   }
   .project-cards__item:nth-child(2n) {
     margin-right: 0;
   }
-  .project-cards__item:nth-last-child(-n+2) {
-    margin-bottom: 0;
+  .project-cards__item:last-child {
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1310,7 +1298,6 @@ body {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
-  outline: 1px dotted orange;
 }
 
 .project-cards__title {

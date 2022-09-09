@@ -7,25 +7,22 @@
 }
 
 .project-cards__item {
-outline: 4px dotted darkgreen;
-
     @include transition();
     transition-property: box-shadow;
-  
-    margin-right: auto;
-    margin-left: auto;
-
     // tablet
     @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
         flex-basis: calc((100% - 1 * 30px) / 2);
-        margin-right: 30px;
-        margin-bottom: 30px;
+       margin-right: 0;
+       &:not(:last-child){
+         margin-bottom: 30px;
+         margin-right: 30px;
+       }
     &:nth-child(2n){
         margin-right: 0;
     }
-    &:nth-last-child(-n+2) {
-           margin-bottom: 0;
-         }
+    &:last-child{
+      margin-right: auto;
+    }
     }
     // desktop
     @media screen and (min-width: $desktop) {
@@ -106,8 +103,6 @@ outline: 4px dotted darkgreen;
   border-left: 1px solid $border-whisper-grey;
   border-right: 1px solid $border-whisper-grey;
   border-bottom: 1px solid $border-whisper-grey;
-
-  outline: 1px dotted orange;
 }
 
 .project-cards__title {
