@@ -4,6 +4,13 @@
             flex-wrap: $wrap;
 }
 
+
+@mixin setFlexWrap($type: flex, $wrap: wrap) {
+    display: $type;
+    flex-wrap: $wrap;
+}
+
+
 @mixin centeredFlex($type: flex, $centered: center){
     display: $type;
     align-items: $centered;

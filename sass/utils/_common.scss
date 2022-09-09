@@ -50,22 +50,16 @@ body {
 
     @media screen and (min-width: $mobile) {
         width: $mobile;
-
-
         background-color: orange;
     }
 
     @media screen and (min-width: $tablet) {
         width: $tablet;
-
-
         background-color: lime;
     }
 
     @media screen and (min-width: $desktop) {
          width: $desktop;
-
-
          background-color: skyblue;
     }
 }

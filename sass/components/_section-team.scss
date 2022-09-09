@@ -6,19 +6,47 @@
 
 .team-set{
      @extend %list;
+     @media screen and (min-width: $tablet) {
+            @include setFlexWrap();
+        }
+        @media screen and (min-width: $desktop) {
+            flex-wrap: nowrap;
+        }
 }
 .team-set__item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-basis: auto;
-    // max-width: 270px;
-   
     background-color: $white-color;
     box-shadow: $team-box-shadow;
     border-radius: 0 0 4px 4px;
 
     line-height: 1.2;
+
+    @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
+            flex-basis: calc((100% - 1 * 30px) / 2);
+            margin-right: 30px;
+            margin-bottom: 30px;
+    
+            &:nth-last-child(-n+2) {
+                margin-bottom: 0;
+            }
+    
+            &:nth-child(2n) {
+                margin-right: 0;
+            }
+        }
+                 @media screen and (min-width: $desktop) {
+                     flex-basis: calc((100% - 3 * 30px) / 4);
+                     margin-bottom: 0;
+        
+                     &:not(:last-child) {
+                         margin-right: 30px;
+                     }
+                 }
+        
+                 &:not(:last-child) {
+                     @media screen and (max-width: $max-mobile) {
+                         margin-bottom: 30px;
+                     }
+                 }
 }
 
 .team-set__images {
