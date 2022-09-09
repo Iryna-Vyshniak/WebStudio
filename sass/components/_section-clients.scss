@@ -1,11 +1,7 @@
 .clients-set {
     @extend %list;
     @include setFlexWrap();
-    align-items: center;
     justify-content: center;
-    
-
-
 }
 
 .clients-set__item{
