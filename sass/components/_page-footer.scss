@@ -3,23 +3,53 @@
 }
 
 .container-footer {
+  @include sectionPad($size-top: 60px, $size-bottom: 60px);   
+
+@media screen and (max-width: $max-mobile) {
+    align-items: center;
+   
+  }
+
+  @media screen and (min-width: $tablet){
+@include sectionSetFlex();
+flex-wrap: wrap;
+align-items: baseline;
+justify-content: space-around;
+  }
+
+@media screen and (min-width: $desktop) {
   @include centeredFlex($type: flex, $centered: baseline);
-  @include sectionPad($size-top: 60px, $size-bottom: 60px);
+}
+    
+}
+
+.address-content{
+  @media screen and (min-width: $mobile) and (max-width: $max-tablet) {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+  
+    @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
+      text-align: center;
+      margin-right: 165px;
+    }
 }
 
 .address {
   @extend %list;
-      margin-top: 0;
-      margin-bottom: 0;
-
-      font-style: normal;
-      font-size: $secondary-font-size;
 }
 
-.address__item:not(:last-child) {
-      margin-bottom: 9px;
-        }
 
+.address__item{
+  margin-top: 0;
+    margin-bottom: 0;
+  
+    font-style: normal;
+    font-size: $secondary-font-size;
+    &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
 .address__map {
   @extend %link;
             color: $white-color;

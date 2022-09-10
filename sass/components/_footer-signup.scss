@@ -3,6 +3,14 @@
     padding: 0;
     margin-bottom: 0;
     margin-left: auto;
+
+    @media screen and (max-width: $max-tablet) {
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    }
 }
 
 .footer-signup__subscription {
@@ -13,6 +21,12 @@
     display: flex;
     margin-top: 0;
     margin-bottom: 0;
+@media screen and (max-width: $max-tablet){
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 }
 
 .footer-signup__email {
@@ -34,6 +48,10 @@
     font-size: $primary-font-size;
 
     line-height: 1.2;
+
+    @media screen and (max-width: $max-tablet) {
+        margin-bottom: 20px;
+    }
 }
 
 .signup-button {

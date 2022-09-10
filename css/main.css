@@ -854,19 +854,49 @@ body {
 }
 
 .container-footer {
-  display: flex;
-  align-items: baseline;
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (max-width: 767.98px) {
+  .container-footer {
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container-footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container-footer {
+    display: flex;
+    align-items: baseline;
+  }
+}
 
-.address {
+@media screen and (min-width: 480px) and (max-width: 1199.98px) {
+  .address-content {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .address-content {
+    text-align: center;
+    margin-right: 165px;
+  }
+}
+
+.address__item {
   margin-top: 0;
   margin-bottom: 0;
   font-style: normal;
   font-size: 14px;
 }
-
 .address__item:not(:last-child) {
   margin-bottom: 9px;
 }
@@ -879,15 +909,32 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-socials {
-  margin-left: 70px;
+@media screen and (max-width: 1199.98px) {
+  .footer-socials {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-socials {
+    margin-left: 70px;
+  }
 }
 
 .footer-socials__slogan {
   margin-top: 0;
   margin-bottom: 20px;
   color: #ffffff;
-  text-align: left;
+}
+@media screen and (max-width: 1199.98px) {
+  .footer-socials__slogan {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-socials__slogan {
+    text-align: left;
+  }
 }
 
 .socials-set__link--page-footer {
@@ -905,6 +952,15 @@ body {
   margin-bottom: 0;
   margin-left: auto;
 }
+@media screen and (max-width: 1199.98px) {
+  .footer-signup {
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 
 .footer-signup__subscription {
   margin-right: 12px;
@@ -914,6 +970,13 @@ body {
   display: flex;
   margin-top: 0;
   margin-bottom: 0;
+}
+@media screen and (max-width: 1199.98px) {
+  .footer-signup__form {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .footer-signup__email {
@@ -931,6 +994,11 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
+}
+@media screen and (max-width: 1199.98px) {
+  .footer-signup__email {
+    margin-bottom: 20px;
+  }
 }
 
 .signup-button {
