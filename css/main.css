@@ -1272,9 +1272,26 @@ body {
   margin-top: 0;
   margin-bottom: 50px;
 }
+@media screen and (max-width: 767.98px) {
+  .filter-cards {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
 
+.filter-cards__item {
+  margin-bottom: 0;
+}
 .filter-cards__item:not(:last-child) {
   margin-right: 8px;
+}
+@media screen and (max-width: 1199.98px) {
+  .filter-cards__item {
+    margin-bottom: 15px;
+  }
+  .filter-cards__item:nth-last-child(-n+2) {
+    margin-bottom: 0;
+  }
 }
 
 .button-filter {

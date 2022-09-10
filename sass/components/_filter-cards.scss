@@ -4,12 +4,25 @@
     justify-content: center;
     margin-top: 0;
     margin-bottom: 50px;
+    @media  screen and (max-width: $max-mobile) {
+       flex-wrap: wrap;
+       justify-content: flex-start; 
+    }
 }
 
 .filter-cards__item{
+    margin-bottom:0;
     &:not(:last-child) {
     margin-right: 8px;
 }
+@media screen and (max-width: $max-tablet){
+    margin-bottom: 15px;
+    &:nth-last-child(-n+2){
+        margin-bottom: 0;
+    }
+}
+
+
 }
 
 .button-filter {
