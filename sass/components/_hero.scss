@@ -1,9 +1,8 @@
 .hero {
     @extend %centered;
-
     max-width: 1600px;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     margin-left: auto;
     margin-right: auto;
 
@@ -12,19 +11,34 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
     background-color: $bg-gunmetal;
+
+    @media screen and (min-width: $desktop) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
 
     &__title {
             margin-top: 0;
             margin-bottom: 30px;
-    
+            margin-left: auto;
+            margin-right: auto;
             color: $white-color;
-            font-size: $hero-font-size;
+            font-size: 26px;
             font-weight: $hero-weight;
-            line-height: 1.4;
+            font-size: $hero-mob-font-size;
+            line-height: 1.62;
     
             letter-spacing: 0.06em;
             text-transform: uppercase;
+            max-width: 360px;
+
+            @media screen and (min-width: $desktop){
+                max-width: 696px;
+                margin-left: auto;
+                margin-right: auto;
+                font-size: $hero-font-size;
+                line-height: 1.4;
+            }
         }
 }
