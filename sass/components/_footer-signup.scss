@@ -1,22 +1,21 @@
 /* Підпишіться на розсилку */
-
 .footer-signup {
     padding: 0;
     margin-bottom: 0;
     margin-left: auto;
 }
 
-.signup {
+.footer-signup__subscription {
+    margin-right: 12px;
+}
+
+.footer-signup__form {
     display: flex;
     margin-top: 0;
     margin-bottom: 0;
 }
 
-.signup__slogan:not(:last-child) {
-    margin-right: 12px;
-}
-
-.signup__slogan-email {
+.footer-signup__email {
     min-width: 358px;
     margin-top: 0;
     margin-bottom: 0;
@@ -37,9 +36,10 @@
     line-height: 1.2;
 }
 
-.signup__button {
+.signup-button {
     position: relative;
-    @include centeredFlex();
+    display: flex;
+    align-items: center;
 
     min-width: 200px;
     height: 50px;
@@ -47,10 +47,10 @@
 }
 
 .signup-icon {
-  position: absolute;
-  right: 28px;
-  display: inline-flex;
-  margin-left: 10px;
+    position: absolute;
+    right: 28px;
+    display: inline-flex;
+    margin-left: 10px;
 
-  fill: $white-color;
+    fill: $white-color;
 }

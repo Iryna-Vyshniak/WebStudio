@@ -121,17 +121,15 @@
   margin: -1px;
 
   &:checked ~ .policy-label__icon--square {
-    fill: $accent-dodger-blue;
     opacity: 0;
     @include transition();
-      transition-property: fill;
+    transition-property: opacity;
   }
 
   &:checked ~ .policy-label__icon--check {
-    fill: $accent-dodger-blue;
     opacity: 1;
     @include transition();
-      transition-property: fill;
+    transition-property: opacity;
   }
 }
 

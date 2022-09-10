@@ -906,17 +906,17 @@ body {
   margin-left: auto;
 }
 
-.signup {
+.footer-signup__subscription {
+  margin-right: 12px;
+}
+
+.footer-signup__form {
   display: flex;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.signup__slogan:not(:last-child) {
-  margin-right: 12px;
-}
-
-.signup__slogan-email {
+.footer-signup__email {
   min-width: 358px;
   margin-top: 0;
   margin-bottom: 0;
@@ -933,7 +933,7 @@ body {
   line-height: 1.2;
 }
 
-.signup__button {
+.signup-button {
   position: relative;
   display: flex;
   align-items: center;
@@ -1127,18 +1127,16 @@ body {
   margin: -1px;
 }
 .policy-label__checkbox:checked ~ .policy-label__icon--square {
-  fill: #2196f3;
   opacity: 0;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: fill;
+  transition-property: opacity;
 }
 .policy-label__checkbox:checked ~ .policy-label__icon--check {
-  fill: #2196f3;
   opacity: 1;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: fill;
+  transition-property: opacity;
 }
 
 .policy-label__icon--square {
