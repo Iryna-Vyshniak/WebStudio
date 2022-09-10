@@ -1,5 +1,13 @@
 <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden" xmlns="http://www.w3.org/2000/svg"><defs>
 
+<symbol id="icon-mobile-close" viewBox="0 0 32 32">
+<path d="M23.733 10.304l-1.504-1.504-5.963 5.963-5.963-5.963-1.504 1.504 5.963 5.963-5.963 5.963 1.504 1.504 5.963-5.963 5.963 5.963 1.504-1.504-5.963-5.963 5.963-5.963z"></path>
+</symbol>
+
+<symbol id="icon-burger" viewBox="0 0 32 32">
+<path d="M6.4 11.733v-2.133h19.2v2.133h-19.2zM6.4 17.067h19.2v-2.133h-19.2v2.133zM6.4 22.4h19.2v-2.133h-19.2v2.133z"></path>
+</symbol>
+
 <symbol id="icon-white-check" viewBox="0 0 42 32"><path fill="#fff" style="fill:var(--color1, #fff);stroke:var(--color1, #fff)" stroke="#fff" stroke-width=".64" d="m6.263 15.205-.22-.21-3.307 3.132 11.651 11.114L38.864 5.89l-3.285-3.134-21.192 20.197-8.124-7.75z"/></symbol>
 <symbol id="icon-telegram-white" viewBox="0 0 32 32"><path fill="#fff" style="fill:var(--color1, #fff)" d="M32 0 0 18l10.227 3.788L26 7 14.002 23.186l.01.004-.012-.004V32l5.735-6.691L27 28l5-28z"/></symbol>
 

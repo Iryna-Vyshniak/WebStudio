@@ -71,6 +71,87 @@
             </li>
           </ul>
         </div>
+
+        <!-- mobile menu -->
+        <div class="container mobile-wrapper">
+          <!-- logo -->
+          <a class="site-logo link" href="./index.html" lang="en"
+            ><span class="site-logo__accent">Web</span>Studio</a
+          >
+          <!-- button -->
+          <button
+            type="button"
+            class="mob-menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              class="mobile-menu__icon"
+              width="40"
+              height="40"
+              aria-label="Перемикач мобільного меню"
+            >
+              <use class="mob-menu__open-icon" href=".images/icons.svg#icon-burger"></use>
+            </svg>
+          </button>
+
+          <!-- menu -->
+          <div class="mob-menu-container js-menu-container">
+            <div class="mob-menu">
+              <!-- links -->
+              <ul class="header-mob-menu">
+                <li class="header-mob-menu__item">
+                  <a
+                    class="header-mob-menu__link header-mob-menu__link--current point link"
+                    href="./index.html"
+                    aria-current="page"
+                    >Студія</a
+                  >
+                </li>
+                <li class="header-mob-menu__item">
+                  <a class="header-mob-menu__link point link" href="./portfolio.html">Портфоліо</a>
+                </li>
+                <li class="header-mob-menu__item">
+                  <a href="#" class="header-mob-menu__link point link">Контакти</a>
+                </li>
+              </ul>
+              <!-- contact -->
+              <ul class="header-mob-contacts list">
+                <li class="header-mob-contacts__item">
+                  <a
+                    class="header-mob-menu__link header-mob-menu__link--contact point link"
+                    href="mailto:info@devstudio.com"
+                    lang="en"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="header-mob-contacts__item">
+                  <a
+                    class="header-mob-menu__link header-mob-menu__link--contact point link"
+                    href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- button -->
+            <button
+              type="button"
+              class="mob-menu-close js-close-menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <svg
+                class="mobile-menu__icon"
+                width="40"
+                height="40"
+                aria-label="Перемикач мобільного меню"
+              >
+                <use class="mob-menu__close-icon" href=".images/icons.svg#icon-mobile-close"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </header>
 
       <!-- ================================================ -->
