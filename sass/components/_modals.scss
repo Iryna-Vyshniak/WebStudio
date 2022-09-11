@@ -9,7 +9,8 @@
     padding: 94px 15px;
     background-color: $bg-modal-overlay;
 
-    overflow: scroll;
+    overflow-y: scroll;
+
     opacity: 1;
     @include transition();
     transition-property: opacity;
@@ -29,12 +30,11 @@
 
 .modal {
     position: absolute;
-    top: 50%;
-    left: 50%;
-   
-    transform: translate(-50%, -50%) scale(1);
-
-    width: 480px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1);
+    max-width: 480px;
+    width: 100%;
     min-height: 609px;
     
     background: $white-color;
@@ -47,8 +47,12 @@
         transition-property: transform, opacity;
 
      @media screen and (min-width: $desktop) {
-        width: 528px;
-    min-height: 581px;    
+       
+        max-width: 528px;
+        width: 100%;
+        min-height: 581px;    
+
+
     }
 }
 

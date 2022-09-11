@@ -23,16 +23,16 @@
   padding: 0;
   border: none;
   background-color: transparent;  
-
-  &.is-open .mobile-menu__close {
+}
+  .mobile-menu__button.is-open .mobile-menu__icon-cross {
         display: block;
     }
-  &.is-open .mobile-menu__open {
+  .mobile-menu__button.is-open .mobile-menu__icon-burger {
         display: none;
     }
-}
 
-.mobile-menu__close{
+
+.mobile-menu__icon-cross{
     display: none;
 }
 
@@ -79,15 +79,25 @@
     cursor: pointer;
 }
 
-.mobile-menu__open {
+// .mobile-menu__open {
+//     @include transition();
+//     transition-property: fill;
+
+//     .mobile-menu__toggle:hover &,
+//     .mobile-menu__toggle:focus & {
+//         fill: $accent-dodger-blue;
+//     }
+// }
+
+ .mobile-menu__button:hover .mobile-menu__icon-burger,
+ .mobile-menu__button:focus .mobile-menu__icon-burger {
     @include transition();
     transition-property: fill;
-
-    .mobile-menu__toggle:hover &,
-    .mobile-menu__toggle:focus & {
-        fill: $accent-dodger-blue;
+    fill: $accent-dodger-blue;
     }
-}
+
+
+
 
 // close mob-menu
 .mobile-menu__cross {
@@ -99,14 +109,11 @@
     padding: 0;
 }
 
-.mobile-menu__close {
+.mobile-menu__button:hover .mobile-menu__icon-close,
+.mobile-menu__button:focus .mobile-menu__icon-close {
     @include transition();
-        transition-property: fill;
-
-    .mobile-menu__cross:hover &,
-    .mobile-menu__cross:focus & {
-        fill: $accent-dodger-blue;
-    }
+    transition-property: fill;
+    fill: $accent-dodger-blue;
 }
 
 .header-mob-menu {

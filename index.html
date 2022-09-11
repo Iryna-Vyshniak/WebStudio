@@ -15,7 +15,7 @@
     <!-- css -->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-  <body class="modal-open">
+  <body>
     <div class="wrapper">
       <!-- HEADER -->
       <header class="page-header">
@@ -91,13 +91,16 @@
               height="40"
               aria-label="Перемикач мобільного меню"
             >
-              <use class="mobile-menu__open" href="./images/icons.svg#icon-burger"></use>
-              <use class="mobile-menu__close" href="./images/icons.svg#icon-mobile-close"></use>
+              <use class="mobile-menu__icon-burger" href="./images/icons.svg#icon-burger"></use>
+              <use
+                class="mobile-menu__icon-cross"
+                href="./images/icons.svg#icon-mobile-close"
+              ></use>
             </svg>
           </button>
 
           <!-- menu -->
-          <div class="mob-menu-container is-open js-menu-container" id="mobile-menu">
+          <div class="mob-menu-container js-menu-container" id="mobile-menu">
             <div class="mob-menu-navigation">
               <!-- button -->
               <button
@@ -112,7 +115,10 @@
                   height="40"
                   aria-label="Перемикач мобільного меню"
                 >
-                  <use class="mobile-menu__close" href="./images/icons.svg#icon-mobile-close"></use>
+                  <use
+                    class="mobile-menu__icon-close"
+                    href="./images/icons.svg#icon-mobile-close"
+                  ></use>
                 </svg>
               </button>
               <!-- links -->
