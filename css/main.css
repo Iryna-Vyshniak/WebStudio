@@ -259,13 +259,13 @@ summary {
   display: list-item;
 }
 
-.project-cards, .filter-cards, .address, .clients-set, .socials-set, .team-set, .advantages-set__item, .advantages-set, .site-contacts, .site-nav, .header-mob-menu, .section {
+.project-cards, .filter-cards, .address, .clients-set, .socials-set, .team-set, .advantages-set__item, .advantages-set, .site-contacts, .site-nav, .mob-socials-set, .header-mob-contacts, .header-mob-menu, .section {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.project-cards__link, .address__contact, .address__map, .socials-set__link, .site-contacts__link, .site-logo, .site-nav__link, .mob-socials-set__link {
+.project-cards__link, .address__contact, .address__map, .socials-set__link, .site-contacts__link, .site-logo, .site-nav__link, .mob-socials-set__link, .header-mob-menu__link--mail, .header-mob-menu__link--tel, .header-mob-menu__link {
   text-decoration: none;
   color: inherit;
 }
@@ -275,7 +275,7 @@ summary {
   margin-bottom: 0;
 }
 
-.form, .member-team, .business, .button__main-button, .hero, .title, .section__title {
+.form, .page-footer, .member-team, .business, .button__main-button, .hero, .title, .section__title {
   text-align: center;
 }
 
@@ -502,7 +502,8 @@ body {
   flex-direction: column;
   max-width: 400px;
   width: 100%;
-  min-height: 95vh;
+  min-height: 80vh;
+  height: 100%;
   margin: 0;
 }
 
@@ -1147,6 +1148,9 @@ body {
   }
 }
 
+.address-content {
+  margin-bottom: 60px;
+}
 @media screen and (min-width: 480px) and (max-width: 1199.98px) {
   .address-content {
     text-align: center;
