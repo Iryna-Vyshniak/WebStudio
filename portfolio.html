@@ -19,7 +19,7 @@
     <div class="wrapper">
       <!-- HEADER -->
       <header class="page-header">
-        <div class="container row">
+        <div class="container row page-header-container">
           <!-- nav -->
           <nav class="page-header__nav">
             <!-- logo -->
@@ -29,15 +29,15 @@
             <!-- menu -->
             <ul class="site-nav list">
               <li class="site-nav__item">
-                <a class="site-nav__link point link" href="./index.html">Студія</a>
-              </li>
-              <li class="site-nav__item">
                 <a
                   class="site-nav__link site-nav__link--current point link"
-                  href="./portfolio.html"
+                  href="./index.html"
                   aria-current="page"
-                  >Портфоліо</a
+                  >Студія</a
                 >
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link point link" href="./portfolio.html">Портфоліо</a>
               </li>
               <li class="site-nav__item">
                 <a class="site-nav__link point link" href="">Контакти</a>
@@ -70,6 +70,142 @@
               >
             </li>
           </ul>
+        </div>
+
+        <!-- mobile menu -->
+        <div class="container mobile-wrapper">
+          <!-- logo -->
+          <a class="site-logo link" href="./index.html" lang="en"
+            ><span class="site-logo__accent">Web</span>Studio</a
+          >
+          <!-- button -->
+          <button
+            type="button"
+            class="mobile-menu__button mobile-menu__toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              class="mobile-menu__icon"
+              width="40"
+              height="40"
+              aria-label="Перемикач мобільного меню"
+            >
+              <use class="mobile-menu__icon-burger" href="./images/icons.svg#icon-burger"></use>
+              <use
+                class="mobile-menu__icon-cross"
+                href="./images/icons.svg#icon-mobile-close"
+              ></use>
+            </svg>
+          </button>
+
+          <!-- menu -->
+          <div class="mob-menu-container js-menu-container" id="mobile-menu">
+            <div class="mob-menu-navigation">
+              <!-- button -->
+              <button
+                type="button"
+                class="mobile-menu__button mobile-menu__cross js-close-menu"
+                aria-expanded="false"
+                aria-controls="mobile-menu"
+              >
+                <svg
+                  class="mobile-menu__icon"
+                  width="40"
+                  height="40"
+                  aria-label="Перемикач мобільного меню"
+                >
+                  <use
+                    class="mobile-menu__icon-close"
+                    href="./images/icons.svg#icon-mobile-close"
+                  ></use>
+                </svg>
+              </button>
+              <!-- links -->
+              <ul class="header-mob-menu list">
+                <li class="header-mob-menu__item">
+                  <a class="header-mob-menu__link point link" href="./index.html">Студія</a>
+                </li>
+                <li class="header-mob-menu__item">
+                  <a
+                    class="header-mob-menu__link site-nav__link--current point link"
+                    href="./portfolio.html"
+                    aria-current="page"
+                    >Портфоліо</a
+                  >
+                </li>
+                <li class="header-mob-menu__item">
+                  <a href="#" class="header-mob-menu__link point link">Контакти</a>
+                </li>
+              </ul>
+              <!-- contact -->
+              <ul class="header-mob-contacts list">
+                <li class="header-mob-contacts__item">
+                  <a
+                    class="header-mob-menu__link header-mob-menu__link--tel point link"
+                    href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+                <li class="header-mob-contacts__item">
+                  <a
+                    class="header-mob-menu__link header-mob-menu__link--mail point link"
+                    href="mailto:info@devstudio.com"
+                    lang="en"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+              <!-- networks -->
+              <ul class="mob-socials-set list">
+                <!-- socials-set__item same margin-right:10 for team & footer -->
+                <li class="mob-socials-set__item">
+                  <a
+                    href="#"
+                    class="mob-socials-set__link link"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    aria-label="Посилання на instagram"
+                  >
+                    Instagram
+                  </a>
+                </li>
+                <li class="mob-socials-set__item">
+                  <a
+                    href="#"
+                    class="mob-socials-set__link link"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    aria-label="Посилання на twitter"
+                  >
+                    Twitter
+                  </a>
+                </li>
+                <li class="mob-socials-set__item">
+                  <a
+                    href="#"
+                    class="mob-socials-set__link link"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    aria-label="Посилання на facebook"
+                  >
+                    Facebook
+                  </a>
+                </li>
+                <li class="mob-socials-set__item">
+                  <a
+                    href="#"
+                    class="mob-socials-set__link link"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    aria-label="Посилання на linkedin"
+                  >
+                    Linkedin
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </header>
 
@@ -450,6 +586,13 @@
     </div>
 
     <!-- script -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

@@ -259,7 +259,7 @@ summary {
   display: list-item;
 }
 
-.project-cards, .filter-cards, .address, .clients-set, .socials-set, .team-set, .advantages-set__item, .advantages-set, .site-contacts, .site-nav, .section {
+.project-cards, .filter-cards, .address, .clients-set, .socials-set, .team-set, .advantages-set__item, .advantages-set, .site-contacts, .site-nav, .header-mob-menu, .section {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -328,19 +328,16 @@ body {
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
-    background-color: orange;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
-    background-color: lime;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    background-color: skyblue;
   }
 }
 
@@ -406,7 +403,6 @@ body {
 }
 
 .page-header {
-  position: relative;
   width: 100%;
   min-height: 80px;
   background-color: #ffffff;
@@ -423,6 +419,7 @@ body {
 }
 
 .page-header__nav {
+  position: relative;
   display: flex;
   align-items: center;
 }
@@ -432,19 +429,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 @media screen and (min-width: 768px) {
   .mobile-wrapper {
     display: none;
   }
-}
-
-.mob-menu-navigation {
-  display: flex;
-  flex-direction: column;
-  max-width: 400px;
-  height: 100%;
-  margin: 0;
 }
 
 .mobile-menu__button {
@@ -453,6 +444,11 @@ body {
   padding: 0;
   border: none;
   background-color: transparent;
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu__button {
+    dispaly: none;
+  }
 }
 
 .mobile-menu__button.is-open .mobile-menu__icon-cross {
@@ -471,26 +467,43 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 20;
+  z-index: 2;
   width: 100%;
   min-height: 100vh;
-  background-color: yellow;
+  background-color: #ffffff;
   padding: 48px 40px;
-  opacity: 0.8;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
   transform: translateX(-100%);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: opacity, transform;
+  transition-property: opacity, visibility, transform;
 }
 @media screen and (max-height: 500px) {
   .mob-menu-container {
     overflow-y: scroll;
   }
 }
+@media screen and (max-width: 767.98px) {
+  .mob-menu-container {
+    dispaly: none;
+  }
+  .mob-menu-container.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: initial;
+    transform: translateX(0);
+  }
+}
 
-.mob-menu-container.is-open {
-  opacity: 1;
-  transform: translateX(0);
+.mob-menu-navigation {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  width: 100%;
+  min-height: 95vh;
+  margin: 0;
 }
 
 .mobile-menu__toggle {

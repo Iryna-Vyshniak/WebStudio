@@ -1,5 +1,5 @@
 .page-header {
-  position: relative;
+  
   width: 100%;
   min-height: $header-height;
 
@@ -16,6 +16,7 @@ display: flex;
 }
 
 .page-header__nav {
+  position: relative;
         @include centeredFlex();
 }
 
