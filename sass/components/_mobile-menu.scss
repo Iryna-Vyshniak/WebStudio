@@ -1,0 +1,213 @@
+.mobile-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    @media screen and (min-width: $tablet) {
+         display: none;
+    }
+}
+
+.mob-menu-navigation{
+    display: flex;
+        flex-direction: column;
+        max-width: 400px;
+        height: 100%;
+        margin: 0;
+}
+
+.mobile-menu__button {
+  display: inline-flex;
+  margin: 0; 
+  padding: 0;
+  border: none;
+  background-color: transparent;  
+
+  &.is-open .mobile-menu__close {
+        display: block;
+    }
+  &.is-open .mobile-menu__open {
+        display: none;
+    }
+}
+
+.mobile-menu__close{
+    display: none;
+}
+
+
+.mob-menu-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+
+    width: 100%;
+    min-height: 100vh;
+
+
+    background-color: yellow;
+    padding: 48px 40px;
+
+    opacity: 0.8;
+    transform: translateX(-100%);
+    
+    @include transition();
+    transition-property: opacity, transform;
+
+    @media screen and (max-height: 500px) {
+        overflow-y: scroll;
+    }
+}
+
+.mob-menu-container.is-open {
+    opacity: 1;
+    transform: translateX(0);
+}
+    
+.mobile-menu__toggle {
+    display: inline-flex;
+    color: $primary-text-color;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    cursor: pointer;
+}
+
+.mobile-menu__open {
+    @include transition();
+    transition-property: fill;
+
+    .mobile-menu__toggle:hover &,
+    .mobile-menu__toggle:focus & {
+        fill: $accent-dodger-blue;
+    }
+}
+
+// close mob-menu
+.mobile-menu__cross {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.mobile-menu__close {
+    @include transition();
+        transition-property: fill;
+
+    .mobile-menu__cross:hover &,
+    .mobile-menu__cross:focus & {
+        fill: $accent-dodger-blue;
+    }
+}
+
+.header-mob-menu {
+    margin-bottom: auto;
+    &__item:not(:last-child){
+     margin-bottom: 32px;
+    }  
+}
+
+.header-mob-menu__link {
+    font-weight: $accent-weight;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: $primary-text-color;
+    @media screen and (max-width: $pre-mobile) {
+        font-size: 5vw;
+    }
+    font-size: $mobile-nav-link;
+        @include transition();
+        transition-property: color;
+
+   &:hover,
+   &:focus{
+    color: $accent-dodger-blue;
+   }
+
+   &__link--current {
+    color: $accent-dodger-blue;
+   }
+}
+
+.header-mob-contacts {
+    margin-bottom: 64px;
+    &__item:not(:last-child) {
+            margin-bottom: 32px;
+        }
+}
+
+.header-mob-menu__link--tel {
+    color: $accent-dodger-blue;
+    @media screen and (max-width: $pre-mobile) {
+        font-size: 5vw;
+    }
+    font-size: $mobile-tel-contacts;
+    @media screen and (max-width: $pre-mobile) {
+        font-size: 5vw;
+    }
+    font-size: $mobile-tel-contacts;
+    // 24px
+}
+
+.header-mob-menu__link--mail{
+    color: $secondary-text-color;
+    @media screen and (max-width: $pre-mobile) {
+            font-size: 5vw;
+        }
+        font-size: $mobile-mail-link;
+        // 24px
+}
+    
+.mob-socials-set{
+    display: inline-flex;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    justify-content: flex-start;
+}
+.mob-socials-set__item{
+        display: flex;
+        align-items: center;
+        @include transition();
+            transition-property: color;
+            &:hover,
+            &:focus {
+                color: $accent-dodger-blue;
+            }
+         
+        &:not(:last-child)::after {
+                content: '';
+        
+                display: inline-block;
+                margin: 0 10px;
+        
+                width: 1px;
+                height: 22px;
+        
+                background-color: rgba(33, 33, 33, 0.2);
+            }
+}
+
+
+.mob-socials-set__link {
+    @extend %link;
+    font-weight: $accent-weight;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+
+    color: $accent-dodger-blue;
+
+    @media screen and (max-width: $pre-mobile) {
+        font-size: 3.75vw;
+    }
+    font-size: $mobile-link-font-size;
+}

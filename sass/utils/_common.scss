@@ -13,15 +13,19 @@ body {
     background-color: $white-color;
 }
 
-// .wrapper {
-//     min-height: 100vh;
-//     display: flex;
-//     flex-direction: column;
-// }
+.modal-open{
+    overflow: hidden;
+}
 
-// .page-main {
-//     flex: 1 1 auto;
-// }
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-main {
+    flex: 1 1 auto;
+}
 
 
 .visually-hidden {

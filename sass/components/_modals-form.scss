@@ -2,7 +2,10 @@
   @extend %centered;
   margin-right: auto;
   margin-left: auto;
+  padding: 40px 30px;
+@media  screen and (min-width: $desktop) {
   padding: 40px;
+}
 }
 
 .form__title {
@@ -94,18 +97,23 @@
   }
 }
 
+.agreement{
+  font-size: $secondary-font-size;
+  line-height: 1.7;
+  color: $secondary-text-color;
+  padding-left: 20px;
+  
+    @media screen and(min-width: $desktop) {
+      padding-left: 35px;
+    }
+}
+
 .policy-label {
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: center;        
   margin-top: 0;
   margin-bottom: 30px;
-  padding-left: 35px;
-
-  font-size: $secondary-font-size;
-  line-height: 1.7;
-
-  color: $secondary-text-color;
 }
 
 .policy-label__checkbox {
@@ -138,25 +146,38 @@
   left: 0;
   top: 10%;
   display: block;
+
+  margin-left: 0;
+  margin-right: 7px;
+
+  opacity: 1;
+  @media screen and (min-width: $desktop){
   margin-left: 13px;
   margin-right: 7px;
-  opacity: 1;
+  }
 }
 
 .policy-label__icon--check {
   position: absolute;
-  left: 0;
-  top: 10%;
-  display: block;
-  margin-left: 13px;
-  margin-right: 7px;
-  opacity: 0;
+    left: 0;
+    top: 10%;
+    display: block;
+  
+    margin-left: 0;
+    margin-right: 7px;
+  
+    opacity: 0;
+  
+    @media screen and (min-width: $desktop) {
+      margin-left: 13px;
+      margin-right: 7px;
+    }
 }
 
 .policy-label__link {
   position: relative;
-  display: inline-flex;
-  margin-left: 5px;
+  display: inline-block;
+  // margin-left: 3px;
   color: $accent-dodger-blue;
   text-decoration: underline;
 }

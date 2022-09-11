@@ -1,15 +1,19 @@
 .page-header {
-   /* position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 10; */
-
+  position: relative;
   width: 100%;
   min-height: $header-height;
 
   background-color: $white-color;
   border-bottom: 1px solid $border-whisper-white;
-} 
+
+}
+
+.page-header-container{
+display: none;
+@media screen and (min-width: $tablet) {
+display: flex;
+}
+}
 
 .page-header__nav {
         @include centeredFlex();
