@@ -235,7 +235,7 @@
             <ul class="project-cards list">
               <li class="project-cards__item">
                 <a class="project-cards__link link" href="#">
-                  <div class="thumb-overlay">
+                  <div class="project-cards__thumb-overlay">
                     <img
                       class="project-cards__img"
                       src="./images/portfolio/techno.jpg"
@@ -258,7 +258,7 @@
               </li>
               <li class="project-cards__item">
                 <a class="project-cards__link link" href="#">
-                  <div class="thumb-overlay">
+                  <div class="project-cards__thumb-overlay">
                     <img
                       class="project-cards__img"
                       src="./images/portfolio/poster.jpg"
@@ -282,7 +282,7 @@
 
               <li class="project-cards__item">
                 <a class="project-cards__link link" href="#">
-                  <div class="thumb-overlay">
+                  <div class="project-cards__thumb-overlay">
                     <img
                       class="project-cards__img"
                       src="./images/portfolio/restoraunt.jpg"
@@ -306,7 +306,7 @@
 
               <li class="project-cards__item">
                 <a class="project-cards__link link" href="#">
-                  <div class="thumb-overlay">
+                  <div class="project-cards__thumb-overlay">
                     <img
                       class="project-cards__img"
                       src="./images/portfolio/prime.jpg"
@@ -330,7 +330,7 @@
 
               <li class="project-cards__item">
                 <a class="project-cards__link link" href="#">
-                  <div class="thumb-overlay">
+                  <div class="project-cards__thumb-overlay">
                     <img
                       class="project-cards__img"
                       src="./images/portfolio/boxes.jpg"
@@ -354,7 +354,7 @@
 
               <li class="project-cards__item">
                 <a class="project-cards__link link" href="#">
-                  <div class="thumb-overlay">
+                  <div class="project-cards__thumb-overlay">
                     <img
                       class="project-cards__img"
                       src="./images/portfolio/inspiration.jpg"
@@ -378,7 +378,7 @@
 
               <li class="project-cards__item">
                 <a class="project-cards__link link" href="#">
-                  <div class="thumb-overlay">
+                  <div class="project-cards__thumb-overlay">
                     <img
                       class="project-cards__img"
                       src="./images/portfolio/magazine.jpg"
@@ -402,7 +402,7 @@
 
               <li class="project-cards__item">
                 <a class="project-cards__link link" href="#">
-                  <div class="thumb-overlay">
+                  <div class="project-cards__thumb-overlay">
                     <img
                       class="project-cards__img"
                       src="./images/portfolio/lab.jpg"
@@ -426,7 +426,7 @@
 
               <li class="project-cards__item">
                 <a class="project-cards__link link" href="#">
-                  <div class="thumb-overlay">
+                  <div class="project-cards__thumb-overlay">
                     <img
                       class="project-cards__img"
                       src="./images/portfolio/business.jpg"
@@ -453,32 +453,35 @@
       </main>
 
       <!-- FOOTER -->
-      <footer class="page-footer">
-        <div class="container container-footer">
-          <div class="address-content">
+      <footer class="footer">
+        <div class="container footer-container">
+          <div class="footer__address-content">
             <!-- logo -->
-            <a class="site-logo page-footer__logo link" href="/" lang="en"
+            <a class="footer__logo site-logo link" href="/" lang="en"
               ><span class="site-logo__accent">Web</span>Studio</a
             >
             <!-- address -->
             <address class="footer-address">
-              <ul class="address list">
-                <li class="address__item">
+              <ul class="footer-address__list list">
+                <li class="footer-address__item">
                   <a
-                    class="address__map point link"
+                    class="footer-address__map point link"
                     href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
                     >м. Київ, пр-т Лесі Українки, 26
                   </a>
                 </li>
-                <li class="address__item">
-                  <a class="address__contact point link" href="mailto:info@devstudio.com" lang="en"
+                <li class="footer-address__item">
+                  <a
+                    class="footer-address__contact point link"
+                    href="mailto:info@devstudio.com"
+                    lang="en"
                     >info@devstudio.com</a
                   >
                 </li>
-                <li class="address__item">
-                  <a class="address__contact point link" href="tel:+380961111111"
+                <li class="footer-address__item">
+                  <a class="footer-address__contact point link" href="tel:+380961111111"
                     >+38 096 111 11 11</a
                   >
                 </li>
@@ -487,72 +490,56 @@
           </div>
           <!-- приєднуйтесь -->
           <div class="centered footer-socials">
-            <p class="subtitle footer-socials__slogan">Приєднуйтесь</p>
-            <ul class="socials-set list">
-              <li class="socials-set__item socials-set__item--networks">
+            <p class="footer-socials__slogan subtitle">Приєднуйтесь</p>
+            <ul class="footer-socials__list socials-set list">
+              <li class="footer-socials__item socials-set__item">
                 <a
                   href="#"
-                  class="socials-set__link socials-set__link--page-footer link"
+                  class="footer-socials__link socials-set__link link"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                   aria-label="Посилання на instagram"
                 >
-                  <svg
-                    class="socials-set__icon socials-set__icon--page-footer"
-                    width="20"
-                    height="20"
-                  >
+                  <svg class="footer-socials__icon socials-set__icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
-              <li class="socials-set__item socials-set__item--networks">
+              <li class="footer-socials__item socials-set__item">
                 <a
                   href="#"
-                  class="socials-set__link socials-set__link--page-footer link"
+                  class="footer-socials__link socials-set__link link"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                   aria-label="Посилання на twitter"
                 >
-                  <svg
-                    class="socials-set__icon socials-set__icon--page-footer"
-                    width="20"
-                    height="20"
-                  >
+                  <svg class="footer-socials__icon socials-set__icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
-              <li class="socials-set__item socials-set__item--networks">
+              <li class="footer-socials__item socials-set__item">
                 <a
                   href="#"
-                  class="socials-set__link socials-set__link--page-footer link"
+                  class="footer-socials__link socials-set__link link"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                   aria-label="Посилання на facebook"
                 >
-                  <svg
-                    class="socials-set__icon socials-set__icon--page-footer"
-                    width="20"
-                    height="20"
-                  >
+                  <svg class="footer-socials__icon socials-set__icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
-              <li class="socials-set__item socials-set__item--networks">
+              <li class="footer-socials__item socials-set__item">
                 <a
                   href="#"
-                  class="socials-set__link socials-set__link--page-footer link"
+                  class="footer-socials__link socials-set__link link"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                   aria-label="Посилання на linkedin"
                 >
-                  <svg
-                    class="socials-set__icon socials-set__icon--page-footer"
-                    width="20"
-                    height="20"
-                  >
+                  <svg class="footer-socials__icon socials-set__icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-linkedin"></use>
                   </svg>
                 </a>
@@ -561,20 +548,22 @@
           </div>
           <!-- Підпишіться на розсилку -->
           <div class="centered footer-signup">
-            <p class="subtitle footer-socials__slogan">Підпишіться на розсилку</p>
+            <p class="footer-signup__slogan footer-socials__slogan subtitle">
+              Підпишіться на розсилку
+            </p>
             <form action="javascript:void(0);" class="footer-signup__form" autocomplete="off">
               <label class="footer-signup__subscription" for="footer-signup__subscription">
                 <input
                   id="footer-signup__subscription"
-                  class="signup-slogan footer-signup__email"
+                  class="footer-signup__email signup-slogan"
                   type="email"
                   name="email"
                   placeholder="E-mail"
                 />
               </label>
-              <button class="button signup-button button__main-button" type="button">
+              <button class="footer-signup__button button button__main-button" type="button">
                 Підписатися
-                <svg class="signup-icon" width="24" height="24">
+                <svg class="footer-signup__icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-telegram-white"></use>
                 </svg>
               </button>

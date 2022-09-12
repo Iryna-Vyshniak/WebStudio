@@ -20,14 +20,14 @@
 }
 }
 
-.business-set {
+.business__list {
   @media screen and (min-width: $desktop){
   @include sectionSetFlex($type: flex, $wrap: nowrap);
   }
 }
 
 
-.business-set__item {
+.business__item {
   position: relative;
   @include centeredFlex();
   max-width: 370px;
@@ -37,7 +37,7 @@
     }
 }
 
-.set__descr {
+.business__descr {
   position: absolute;
   left: 0;
   bottom: 0;

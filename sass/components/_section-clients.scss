@@ -1,10 +1,10 @@
-.clients-set {
+.clients__list {
     @extend %list;
     @include setFlexWrap();
     justify-content: center;
 }
 
-.clients-set__item{
+.clients__item{
   @media screen and (max-width: $max-mobile){
     flex-basis: calc((100% - 1 * 30px) / 2);
     margin-right: 30px;
@@ -45,7 +45,7 @@
 
 
 
-.clients-set__logo {
+.clients__logo {
     @include centeredFlex();
     justify-content: center;
     min-width: 170px;
@@ -65,6 +65,6 @@
     }
 }
 
-.clients-set__icon {
+.clients__icon {
     fill: currentColor;
 }

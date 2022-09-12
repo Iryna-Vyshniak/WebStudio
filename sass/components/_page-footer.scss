@@ -1,9 +1,9 @@
-.page-footer {
+.footer {
   @extend %centered;
     background-color: $bg-gunmetal;
 }
 
-.container-footer {
+.footer-container {
   @include sectionPad($size-top: 60px, $size-bottom: 60px);   
 
 @media screen and (max-width: $max-mobile) {
@@ -24,7 +24,7 @@ justify-content: space-around;
     
 }
 
-.address-content{
+.footer__address-content{
   margin-bottom: 60px;
   @media screen and (min-width: $mobile) and (max-width: $max-tablet) {
       text-align: center;
@@ -35,14 +35,15 @@ justify-content: space-around;
       text-align: center;
       margin-right: 165px;
     }
+    text-align: left;
 }
 
-.address {
+.footer-address__list {
   @extend %list;
 }
 
 
-.address__item{
+.footer-address__item{
   margin-top: 0;
     margin-bottom: 0;
   
@@ -52,12 +53,12 @@ justify-content: space-around;
     margin-bottom: 9px;
   }
 }
-.address__map {
+.footer-address__map {
   @extend %link;
             color: $white-color;
         }
 
-.address__contact {
+.footer-address__contact {
   @extend %link;
             color: $white-transparent-color;
             }

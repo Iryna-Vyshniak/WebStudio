@@ -1,10 +1,10 @@
-.member-team {
+.team {
     @extend %centered;
     @include sectionPad();
     background-color: $bg-ghost-white;
 }
 
-.team-set{
+.team__list{
      @extend %list;
      @media screen and (min-width: $tablet) {
             @include setFlexWrap();
@@ -13,7 +13,8 @@
             flex-wrap: nowrap;
         }
 }
-.team-set__item {
+
+.team__item {
     background-color: $white-color;
     box-shadow: $team-box-shadow;
     border-radius: 0 0 4px 4px;
@@ -49,20 +50,20 @@
                  }
 }
 
-.team-set__images {
+.team__images {
     // display: block;
     margin-top: 0;
     margin-bottom: 0;
 }
 
-.member-content {
+.team__content {
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 10px;
     padding-right: 10px;
 }
 
-.member-content__name {
+.team__member-name {
     margin-top: 0;
     margin-bottom: 10px;
 
@@ -71,7 +72,7 @@
 }
 
 
-.member-content__description {
+.team__member-description {
     @extend %description;
     margin-bottom: 16px;
 }
