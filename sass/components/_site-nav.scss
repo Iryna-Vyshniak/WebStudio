@@ -39,8 +39,8 @@
         background: $accent-dodger-blue;
         border: none;
         border-radius: 2px;
-@include transition();
-    transition-property: transform;
+        @include transition();
+        transition-property: transform;
         transform: scaleX(1);               
 }       
     &:hover::after {
