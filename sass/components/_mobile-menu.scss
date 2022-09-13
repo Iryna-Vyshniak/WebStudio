@@ -20,7 +20,7 @@
   background-color: transparent; 
   
   @media screen and (min-width: $tablet) {
-    dispaly: none;
+    display: none;
   }
 }
   .mobile-menu__button.is-open .mobile-menu__icon-cross {
@@ -60,7 +60,7 @@
         overflow-y: scroll;
     }
     @media screen and (max-width: $max-mobile) {
-        dispaly: none;
+        display: block;
         
         &.is-open {
             opacity: 1;
