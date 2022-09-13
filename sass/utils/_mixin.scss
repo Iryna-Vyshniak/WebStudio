@@ -32,3 +32,8 @@
  height: $height;
  border-radius: $radius;
 }
+
+@mixin animation( $animate-duration: 800ms, $animate-delay: 0.9s){
+    animation-duration: $animate-duration;
+    animation-delay: $animate-delay;
+}
