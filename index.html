@@ -130,7 +130,7 @@
               <ul class="header-mob-menu list">
                 <li class="header-mob-menu__item">
                   <a
-                    class="header-mob-menu__link site-nav__link--current point link"
+                    class="header-mob-menu__link header-mob-menu__link--current point link"
                     href="./index.html"
                     aria-current="page"
                     >Студія</a
@@ -143,18 +143,20 @@
                   <a href="#" class="header-mob-menu__link point link">Контакти</a>
                 </li>
               </ul>
-              <!-- contact -->
-              <ul class="header-mob-contacts list">
-                <li class="header-mob-contacts__item">
+            </div>
+            <!-- contact -->
+            <div class="header-mobile-contacts">
+              <ul class="header-mobile-contacts__list list">
+                <li class="header-mobile-contacts__item">
                   <a
-                    class="header-mob-menu__link header-mob-menu__link--tel point link"
+                    class="header-mobile-contacts__link header-mobile-contacts__link--tel point link"
                     href="tel:+380961111111"
                     >+38 096 111 11 11</a
                   >
                 </li>
-                <li class="header-mob-contacts__item">
+                <li class="header-mobile-contacts__item">
                   <a
-                    class="header-mob-menu__link header-mob-menu__link--mail point link"
+                    class="header-mobile-contacts__link header-mobile-contacts__link--mail point link"
                     href="mailto:info@devstudio.com"
                     lang="en"
                     >info@devstudio.com</a
@@ -162,7 +164,7 @@
                 </li>
               </ul>
               <!-- networks -->
-              <ul class="mob-socials-set list">
+              <ul class="header-mobile-contacts__list mob-socials-set list">
                 <!-- socials-set__item same margin-right:10 for team & footer -->
                 <li class="mob-socials-set__item">
                   <a
@@ -927,19 +929,31 @@
               placeholder="Введіть текст"
             ></textarea>
           </div>
-          <label class="policy-label">
-            <input class="policy-label__checkbox" type="checkbox" name="policy" />
+          <!-- <div class="policy-wrap"> -->
+          <label class="policy-label" for="check">
+            <input
+              class="policy-label__checkbox"
+              type="checkbox"
+              name="policy"
+              id="check"
+              aria-label="Згода з умовами договору"
+            />
+            <svg class="policy-label__icon" width="16" height="15">
+              <use
+                сlass="policy-label__icon-square"
+                href="./images/icons.svg#icon-black-square"
+              ></use>
+              <use
+                class="policy-label__icon-check"
+                href="./images/icons.svg#icon-blue-white-check"
+              ></use>
+            </svg>
             <span class="agreement">
               Погоджуюся з розсилкою та приймаю
               <a href="#" class="policy-label__link link"> Умови договору</a>
             </span>
-            <svg class="policy-label__icon policy-label__icon--square" width="16" height="15">
-              <use href="./images/icons.svg#icon-black-square"></use>
-            </svg>
-            <svg class="policy-label__icon policy-label__icon--check" width="16" height="15">
-              <use href="./images/icons.svg#icon-blue-white-check"></use>
-            </svg>
           </label>
+          <!-- </div> -->
           <button class="button button--form-button button__main-button" type="submit">
             Відправити
           </button>

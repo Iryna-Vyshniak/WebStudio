@@ -30,12 +30,9 @@
         display: none;
     }
 
-
 .mobile-menu__icon-cross{
     display: none;
 }
-
-
 
 .mob-menu-container {
     position: fixed;
@@ -43,8 +40,8 @@
     left: 0;
     z-index: 2;
     width: 100%;
-     min-height: 100vh;
-// min-height: 796px;
+    min-height: 100vh;
+
     background-color: $white-color;
     padding: 48px 40px;
 
@@ -61,76 +58,23 @@
     }
     @media screen and (max-width: $max-mobile) {
         display: block;
-        
         &.is-open {
+            display: flex;
+            flex-direction: column; 
             opacity: 1;
             visibility: visible;
             pointer-events: initial;
-
             transform: translateX(0);
         }
     }
 }
 
-
 .mob-menu-navigation {
-    display: flex;
-    flex-direction: column;
+    flex: 1 0 auto;
     max-width: 400px;
     width: 100%;
-    min-height: 80vh;
-    height: 100%;
     margin: 0;
 }
-
-// .mob-menu-navigation {
-//     display: flex;
-//     flex-direction: column;
-//     max-width: 400px;
-
-//     height: 100%;
-//     margin: 0;
-
-//     transform: translateX(-100%);
-//     @include transition();
-//     transition-property: transform;
-// }
-
-// .mob-menu-container.is-open .mob-menu-navigation {
-//     transform: translateX(0);
-// }
-
-// .mob-menu-container{
-//     display: none;
-//     background-color: yellow;
-//     padding: 48px 40px;
-//     transform: translateX(-100%);
-//     @include transition();
-//     transition-property: opacity, transform;
-
-//     @media screen and (max-height: 500px) {
-//         overflow-y: scroll;
-//     }
-//         @media screen and (max-width: $max-mobile) {
-//             dispaly: none;
-//             position: absolute;
-//             top: 0;
-//             left: 0;
-//             z-index: 2;
-//             width: 100%;
-//             min-height: 100vh;
-//                 &.is-open {
-//                         display: block;
-//                         transform: translateX(0);
-//                     }
-//         }
-//         @media screen and (min-width: $tablet){
-//             display: flex;
-//             justify-content: space-between;
-//             flex-grow: 1;
-//         }
-// }
-
 
 // main first menu-burger&cross
 .mobile-menu__toggle {
@@ -146,15 +90,6 @@
     cursor: pointer;
 }
 
-// .mobile-menu__open {
-//     @include transition();
-//     transition-property: fill;
-
-//     .mobile-menu__toggle:hover &,
-//     .mobile-menu__toggle:focus & {
-//         fill: $accent-dodger-blue;
-//     }
-// }
 
  .mobile-menu__button:hover .mobile-menu__icon-burger,
  .mobile-menu__button:focus .mobile-menu__icon-burger {
@@ -162,9 +97,6 @@
     transition-property: fill;
     fill: $accent-dodger-blue;
     }
-
-
-
 
 // close mob-menu (close open-menu with nav-links)
 .mobile-menu__cross {
@@ -185,7 +117,7 @@
 
 .header-mob-menu {
     @extend %list;
-    margin-bottom: auto;
+    flex: 1 0 auto;
     &__item:not(:last-child){
      margin-bottom: 32px;
     }  
@@ -208,21 +140,27 @@
    &:focus{
     color: $accent-dodger-blue;
    }
-
-   &__link--current {
+}
+   .header-mob-menu__link--current {
     color: $accent-dodger-blue;
    }
+
+
+.header-mobile-contacts{
+    margin: 0;
 }
 
-.header-mob-contacts {
+.header-mobile-contacts__list {
     @extend %list;
     margin-bottom: 64px;
-    &__item:not(:last-child) {
-            margin-bottom: 32px;
-        }
 }
 
-.header-mob-menu__link--tel {
+.header-mobile-contacts__item:not(:last-child) {
+            margin-bottom: 32px;
+        }
+
+
+.header-mobile-contacts__link--tel {
     @extend %link;
     color: $accent-dodger-blue;
     @media screen and (max-width: $pre-mobile) {
@@ -236,7 +174,7 @@
     // 24px
 }
 
-.header-mob-menu__link--mail{
+.header-mobile-contacts__link--mail{
     @extend %link;
     color: $secondary-text-color;
     @media screen and (max-width: $pre-mobile) {
@@ -262,27 +200,24 @@
             &:hover,
             &:focus {
                 color: $accent-dodger-blue;
-            }
-         
+            } 
         &:not(:last-child)::after {
                 content: '';
-        
                 display: inline-block;
                 margin: 0 10px;
-        
                 width: 1px;
                 height: 22px;
-        
                 background-color: rgba(33, 33, 33, 0.2);
             }
 }
-
 
 .mob-socials-set__link {
     @extend %link;
     font-weight: $accent-weight;
     line-height: 1.22;
     letter-spacing: 0.02em;
+    margin-top: 0;
+    margin-bottom: 0;
 
     color: $accent-dodger-blue;
 

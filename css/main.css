@@ -259,13 +259,13 @@ summary {
   display: list-item;
 }
 
-.project-cards, .filter-cards, .footer-address__list, .clients__list, .socials-set, .team__list, .advantages__item, .advantages__list, .site-contacts, .site-nav, .mob-socials-set, .header-mob-contacts, .header-mob-menu, .section {
+.project-cards, .filter-cards, .footer-address__list, .clients__list, .socials-set, .team__list, .advantages__item, .advantages__list, .site-contacts, .site-nav, .mob-socials-set, .header-mobile-contacts__list, .header-mob-menu, .section {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.project-cards__link, .footer-address__contact, .footer-address__map, .socials-set__link, .site-contacts__link, .site-logo, .site-nav__link, .mob-socials-set__link, .header-mob-menu__link--mail, .header-mob-menu__link--tel, .header-mob-menu__link {
+.project-cards__link, .footer-address__contact, .footer-address__map, .socials-set__link, .site-contacts__link, .site-logo, .site-nav__link, .mob-socials-set__link, .header-mobile-contacts__link--mail, .header-mobile-contacts__link--tel, .header-mob-menu__link {
   text-decoration: none;
   color: inherit;
 }
@@ -490,6 +490,8 @@ body {
     display: block;
   }
   .mob-menu-container.is-open {
+    display: flex;
+    flex-direction: column;
     opacity: 1;
     visibility: visible;
     pointer-events: initial;
@@ -498,12 +500,9 @@ body {
 }
 
 .mob-menu-navigation {
-  display: flex;
-  flex-direction: column;
+  flex: 1 0 auto;
   max-width: 400px;
   width: 100%;
-  min-height: 80vh;
-  height: 100%;
   margin: 0;
 }
 
@@ -545,7 +544,7 @@ body {
 }
 
 .header-mob-menu {
-  margin-bottom: auto;
+  flex: 1 0 auto;
 }
 .header-mob-menu__item:not(:last-child) {
   margin-bottom: 32px;
@@ -569,39 +568,45 @@ body {
 .header-mob-menu__link:hover, .header-mob-menu__link:focus {
   color: #2196f3;
 }
-.header-mob-menu__link__link--current {
+
+.header-mob-menu__link--current {
   color: #2196f3;
 }
 
-.header-mob-contacts {
+.header-mobile-contacts {
+  margin: 0;
+}
+
+.header-mobile-contacts__list {
   margin-bottom: 64px;
 }
-.header-mob-contacts__item:not(:last-child) {
+
+.header-mobile-contacts__item:not(:last-child) {
   margin-bottom: 32px;
 }
 
-.header-mob-menu__link--tel {
+.header-mobile-contacts__link--tel {
   color: #2196f3;
   font-size: 34px;
   font-size: 34px;
 }
 @media screen and (max-width: 479px) {
-  .header-mob-menu__link--tel {
+  .header-mobile-contacts__link--tel {
     font-size: 5vw;
   }
 }
 @media screen and (max-width: 479px) {
-  .header-mob-menu__link--tel {
+  .header-mobile-contacts__link--tel {
     font-size: 5vw;
   }
 }
 
-.header-mob-menu__link--mail {
+.header-mobile-contacts__link--mail {
   color: #757575;
   font-size: 24px;
 }
 @media screen and (max-width: 479px) {
-  .header-mob-menu__link--mail {
+  .header-mobile-contacts__link--mail {
     font-size: 5vw;
   }
 }
@@ -637,6 +642,8 @@ body {
   font-weight: 500;
   line-height: 1.22;
   letter-spacing: 0.02em;
+  margin-top: 0;
+  margin-bottom: 0;
   color: #2196f3;
   font-size: 18px;
 }
@@ -772,33 +779,33 @@ body {
   background-size: cover;
   background-position: center;
   background-color: #2f303a;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-mb-min.jpg);
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../../images/hero/hero-mb@2x-min.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-mb@2x-min.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../../images/hero/hero-tb-min.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-tb-min.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../../images/hero/hero-tb@2x-min.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-tb@2x-min.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../../images/hero/hero-dt-min.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-dt-min.jpg);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../../images/hero/hero-dt@2x-min.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-dt@2x-min.jpg);
   }
 }
 .hero .hero__title {
@@ -1407,12 +1414,7 @@ body {
 .form {
   margin-right: auto;
   margin-left: auto;
-  padding: 40px 30px;
-}
-@media screen and (min-width: 1200px) {
-  .form {
-    padding: 40px;
-  }
+  padding: 40px;
 }
 
 .form__title {
@@ -1493,24 +1495,18 @@ body {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.agreement {
-  font-size: 14px;
-  line-height: 1.7;
-  color: #757575;
-  padding-left: 20px;
-}
-@media screen and (min-width: 1200px) {
-  .agreement {
-    padding-left: 35px;
-  }
-}
-
 .policy-label {
-  position: relative;
   display: flex;
+  justify-content: flex-start;
   align-items: center;
   margin-top: 0;
+  margin-right: 0;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .policy-label {
+    justify-content: center;
+  }
 }
 
 .policy-label__checkbox {
@@ -1525,54 +1521,57 @@ body {
   clip-path: inset(50%);
   margin: -1px;
 }
-.policy-label__checkbox:checked ~ .policy-label__icon--square {
-  opacity: 0;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: opacity;
-}
-.policy-label__checkbox:checked ~ .policy-label__icon--check {
-  opacity: 1;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: opacity;
-}
 
-.policy-label__icon--square {
-  position: absolute;
-  left: 0;
-  top: 10%;
-  display: block;
+.policy-label__icon {
+  display: flex;
   margin-left: 0;
-  margin-right: 7px;
-  opacity: 1;
+  margin-right: 5px;
 }
 @media screen and (min-width: 1200px) {
-  .policy-label__icon--square {
-    margin-left: 13px;
-    margin-right: 7px;
+  .policy-label__icon {
+    margin-left: 12px;
   }
 }
 
-.policy-label__icon--check {
-  position: absolute;
-  left: 0;
-  top: 10%;
-  display: block;
-  margin-left: 0;
-  margin-right: 7px;
+.policy-label__checkbox:checked + * .policy-label__icon-square {
   opacity: 0;
 }
-@media screen and (min-width: 1200px) {
-  .policy-label__icon--check {
-    margin-left: 13px;
-    margin-right: 7px;
+
+.policy-label__checkbox:checked + * .policy-label__icon-check {
+  opacity: 1;
+}
+
+.policy-label__icon-square {
+  margin-right: 5px;
+  opacity: 1;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: opacity;
+}
+
+.policy-label__icon-check {
+  margin-right: 5px;
+  opacity: 0;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: opacity;
+}
+
+.agreement {
+  display: block;
+  font-size: 12px;
+  line-height: 1.2;
+  color: #757575;
+}
+@media screen and (max-width: 479px) {
+  .agreement {
+    font-size: 2.5vw;
   }
 }
 
 .policy-label__link {
-  position: relative;
   display: inline-block;
+  margin-left: 3px;
   color: #2196f3;
   text-decoration: underline;
 }

@@ -34,12 +34,13 @@
             <!-- menu -->
             <ul class="site-nav list">
               <li class="site-nav__item">
-                <a class="site-nav__link point link" href="./index.html" aria-current="page"
-                  >Студія</a
-                >
+                <a class="site-nav__link point link" href="./index.html">Студія</a>
               </li>
               <li class="site-nav__item">
-                <a class="site-nav__link point link site-nav__link--current" href="./portfolio.html"
+                <a
+                  class="site-nav__link site-nav__link--current point link"
+                  href="./portfolio.html"
+                  aria-current="page"
                   >Портфоліо</a
                 >
               </li>
@@ -132,7 +133,7 @@
                 </li>
                 <li class="header-mob-menu__item">
                   <a
-                    class="header-mob-menu__link site-nav__link--current point link"
+                    class="header-mob-menu__link header-mob-menu__link--current point link"
                     href="./portfolio.html"
                     aria-current="page"
                     >Портфоліо</a
@@ -142,18 +143,20 @@
                   <a href="#" class="header-mob-menu__link point link">Контакти</a>
                 </li>
               </ul>
-              <!-- contact -->
-              <ul class="header-mob-contacts list">
-                <li class="header-mob-contacts__item">
+            </div>
+            <!-- contact -->
+            <div class="header-mobile-contacts">
+              <ul class="header-mobile-contacts__list list">
+                <li class="header-mobile-contacts__item">
                   <a
-                    class="header-mob-menu__link header-mob-menu__link--tel point link"
+                    class="header-mobile-contacts__link header-mobile-contacts__link--tel point link"
                     href="tel:+380961111111"
                     >+38 096 111 11 11</a
                   >
                 </li>
-                <li class="header-mob-contacts__item">
+                <li class="header-mobile-contacts__item">
                   <a
-                    class="header-mob-menu__link header-mob-menu__link--mail point link"
+                    class="header-mobile-contacts__link header-mobile-contacts__link--mail point link"
                     href="mailto:info@devstudio.com"
                     lang="en"
                     >info@devstudio.com</a
@@ -161,7 +164,7 @@
                 </li>
               </ul>
               <!-- networks -->
-              <ul class="mob-socials-set list">
+              <ul class="header-mobile-contacts__list mob-socials-set list">
                 <!-- socials-set__item same margin-right:10 for team & footer -->
                 <li class="mob-socials-set__item">
                   <a
@@ -251,23 +254,49 @@
               <li class="project-cards__item">
                 <a class="project-cards__link link" href="#">
                   <div class="project-cards__thumb-overlay">
-                    <img
-                      class="project-cards__img"
-                      srcset="
-                        ./images/portfolio/tech-370-min.jpg 370w,
-                        ./images/portfolio/tech-740-min.jpg 740w,
-                        ./images/portfolio/tech-354-min.jpg 354w,
-                        ./images/portfolio/tech-708-min.jpg 708w,
-                        ./images/portfolio/tech-450-min.jpg 450w,
-                        ./images/portfolio/tech-900-min.jpg 900w
-                      "
-                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
-                      src="./images/portfolio/tech-450-min.jpg"
-                      title="Лаптоп з зображенням веб-сайту на екрані"
-                      alt="Лаптоп з зображенням веб-сайту на екрані"
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <source
+                        media="(min-width: 1200px )"
+                        srcset="
+                        ./images/portfolio/tech-740-min.jpg 2x
+                        ./images/portfolio/tech-370-min.jpg 1x,
+                        "
+                        type="image/jpg"
+                      />
+                      <source
+                        media="(min-width: 768px )"
+                        srcset="
+                          ./images/portfolio/tech-354-min.jpg 1x,
+                          ./images/portfolio/tech-708-min.jpg 2x
+                        "
+                        type="image/jpg"
+                      />
+                      <source
+                        media="(max-width: 767px )"
+                        srcset="
+                          ./images/portfolio/tech-450-min.jpg 1x,
+                          ./images/portfolio/tech-900-min.jpg 2x
+                        "
+                        type="image/jpg"
+                      />
+                      <img
+                        class="project-cards__img"
+                        srcset="
+                          ./images/portfolio/tech-370-min.jpg 370w,
+                          ./images/portfolio/tech-740-min.jpg 740w,
+                          ./images/portfolio/tech-354-min.jpg 354w,
+                          ./images/portfolio/tech-708-min.jpg 708w,
+                          ./images/portfolio/tech-450-min.jpg 450w,
+                          ./images/portfolio/tech-900-min.jpg 900w
+                        "
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
+                        src="./images/portfolio/tech-450-min.jpg"
+                        title="Лаптоп з зображенням веб-сайту на екрані"
+                        alt="Лаптоп з зображенням веб-сайту на екрані"
+                        width="370"
+                        height="294"
+                      />
+                    </picture>
                     <p class="project-cards__overlay">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи

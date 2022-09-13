@@ -2,10 +2,7 @@
   @extend %centered;
   margin-right: auto;
   margin-left: auto;
-  padding: 40px 30px;
-@media  screen and (min-width: $desktop) {
   padding: 40px;
-}
 }
 
 .form__title {
@@ -97,23 +94,27 @@
   }
 }
 
-.agreement{
-  font-size: $secondary-font-size;
-  line-height: 1.7;
-  color: $secondary-text-color;
-  padding-left: 20px;
-  
-    @media screen and(min-width: $desktop) {
-      padding-left: 35px;
-    }
-}
+
+// label-policy
+
+    // .policy-wrap{
+    // display: flex;
+    //   justify-content: center;
+    //   align-items: center;
+    //   margin-top: 0;
+    //   margin-bottom: 30px;
+    // }
 
 .policy-label {
-  position: relative;
   display: flex;
-  align-items: center;        
+  justify-content: flex-start;
+  align-items: center;
   margin-top: 0;
+  margin-right: 0;
   margin-bottom: 30px;
+  @media screen and(min-width: $desktop) {
+    justify-content: center;
+  }
 }
 
 .policy-label__checkbox {
@@ -127,57 +128,55 @@
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
-
-  &:checked ~ .policy-label__icon--square {
-    opacity: 0;
-    @include transition();
-    transition-property: opacity;
-  }
-
-  &:checked ~ .policy-label__icon--check {
-    opacity: 1;
-    @include transition();
-    transition-property: opacity;
-  }
 }
 
-.policy-label__icon--square {
-  position: absolute;
-  left: 0;
-  top: 10%;
-  display: block;
-
-  margin-left: 0;
-  margin-right: 7px;
-
-  opacity: 1;
-  @media screen and (min-width: $desktop){
-  margin-left: 13px;
-  margin-right: 7px;
-  }
-}
-
-.policy-label__icon--check {
-  position: absolute;
-    left: 0;
-    top: 10%;
-    display: block;
-  
+.policy-label__icon {
+  display: flex;
     margin-left: 0;
-    margin-right: 7px;
-  
+    margin-right: 5px;
+
+  @media screen and (min-width: $desktop){
+    margin-left: 12px;
+  }
+}
+
+.policy-label__checkbox:checked + * .policy-label__icon-square {
     opacity: 0;
-  
-    @media screen and (min-width: $desktop) {
-      margin-left: 13px;
-      margin-right: 7px;
+  }
+
+.policy-label__checkbox:checked + * .policy-label__icon-check {
+   opacity: 1;
+  }
+
+
+.policy-label__icon-square{
+  margin-right: 5px;
+  opacity: 1;
+  @include transition();
+  transition-property: opacity;
+}
+
+
+.policy-label__icon-check{
+  margin-right: 5px;
+  opacity: 0; 
+  @include transition();
+  transition-property: opacity;
+}
+
+.agreement{
+  display: block;
+  font-size: $modal-form-font;
+  line-height: 1.2;
+  color: $secondary-text-color;
+  @media screen and (max-width: $pre-mobile) {
+      font-size: 2.5vw;
     }
 }
 
 .policy-label__link {
-  position: relative;
   display: inline-block;
-  // margin-left: 3px;
+  margin-left: 3px;
   color: $accent-dodger-blue;
   text-decoration: underline;
 }

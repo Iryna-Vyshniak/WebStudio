@@ -9,6 +9,7 @@
 </symbol>
 
 <symbol id="icon-white-check" viewBox="0 0 42 32"><path fill="#fff" style="fill:var(--color1, #fff);stroke:var(--color1, #fff)" stroke="#fff" stroke-width=".64" d="m6.263 15.205-.22-.21-3.307 3.132 11.651 11.114L38.864 5.89l-3.285-3.134-21.192 20.197-8.124-7.75z"/></symbol>
+
 <symbol id="icon-telegram-white" viewBox="0 0 32 32"><path fill="#fff" style="fill:var(--color1, #fff)" d="M32 0 0 18l10.227 3.788L26 7 14.002 23.186l.01.004-.012-.004V32l5.735-6.691L27 28l5-28z"/></symbol>
 
 <symbol id="icon-black-square" viewBox="0 0 32 32"><path d="M28.444 4.333v23.333H3.555V4.333h24.889zm0-3.333H3.555C1.599 1-.001 2.5-.001 4.333v23.333c0 1.833 1.6 3.333 3.556 3.333h24.889c1.956 0 3.556-1.5 3.556-3.333V4.333C32 2.5 30.4 1 28.444 1z"/></symbol>
