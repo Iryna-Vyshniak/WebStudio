@@ -6,19 +6,50 @@
     margin-left: auto;
     margin-right: auto;
 
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center;   
     background-color: $bg-gunmetal;
 
-    @media screen and (min-width: $desktop) {
-        padding-top: 200px;
-        padding-bottom: 200px;
-    }
 
-    &__title {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../../images/hero/hero-mb-min.jpg);
+    //   retina
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../../images/hero/hero-mb@2x-min.jpg);
+  }
+
+  @media screen and (min-width: $tablet) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../../images/hero/hero-tb-min.jpg);
+    //   retina
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../../images/hero/hero-tb@2x-min.jpg);
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../../images/hero/hero-dt-min.jpg);
+    //   retina
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../../images/hero/hero-dt@2x-min.jpg);
+    }
+}
+
+    .hero__title {
             margin-top: 0;
             margin-bottom: 30px;
             margin-left: auto;

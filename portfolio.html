@@ -216,19 +216,29 @@
             <h1 class="visually-hidden">Portfolio</h1>
             <ul class="filter-cards list">
               <li class="filter-cards__item">
-                <button class="button button-filter" type="button">Усі</button>
+                <button class="button button-filter" type="button" aria-label="Приклади портфоліо">
+                  Усі
+                </button>
               </li>
               <li class="filter-cards__item">
-                <button class="button button-filter" type="button">Веб-сайти</button>
+                <button class="button button-filter" type="button" aria-label="Приклади портфоліо">
+                  Веб-сайти
+                </button>
               </li>
               <li class="filter-cards__item">
-                <button class="button button-filter" type="button">Додатки</button>
+                <button class="button button-filter" type="button" aria-label="Приклади портфоліо">
+                  Додатки
+                </button>
               </li>
               <li class="filter-cards__item">
-                <button class="button button-filter" type="button">Дизайн</button>
+                <button class="button button-filter" type="button" aria-label="Приклади портфоліо">
+                  Дизайн
+                </button>
               </li>
               <li class="filter-cards__item">
-                <button class="button button-filter" type="button">Маркетинг</button>
+                <button class="button button-filter" type="button" aria-label="Приклади портфоліо">
+                  Маркетинг
+                </button>
               </li>
             </ul>
 
@@ -238,7 +248,16 @@
                   <div class="project-cards__thumb-overlay">
                     <img
                       class="project-cards__img"
-                      src="./images/portfolio/techno.jpg"
+                      srcset="
+                        ./images/porfolio/tech-370-min.jpg 370w,
+                        ./images/porfolio/tech-740-min.jpg 740w,
+                        ./images/porfolio/tech-354-min.jpg 354w,
+                        ./images/porfolio/tech-708-min.jpg 708w,
+                        ./images/porfolio/tech-450-min.jpg 450w,
+                        ./images/porfolio/tech-900-min.jpg 900w
+                      "
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
+                      src="./images/porfolio/tech-450-min.jpg"
                       title="Лаптоп з зображенням веб-сайту на екрані"
                       alt="Лаптоп з зображенням веб-сайту на екрані"
                       width="370"
@@ -259,14 +278,50 @@
               <li class="project-cards__item">
                 <a class="project-cards__link link" href="#">
                   <div class="project-cards__thumb-overlay">
-                    <img
-                      class="project-cards__img"
-                      src="./images/portfolio/poster.jpg"
-                      title="Дизайн постеру New Orlean vs Golden Star. Гра двох баскетболістів."
-                      alt="Дизайн постеру New Orlean vs Golden Star. Гра двох баскетболістів."
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <source
+                        media="(min-width: 1200px )"
+                        srcset="
+                          ./images/porfolio/game-370-min.jpg 1x,
+                          ./images/porfolio/game-740-min.jpg 2x
+                        "
+                        type="image/jpg"
+                      />
+                      <source
+                        media="(min-width: 768px )"
+                        srcset="
+                          ./images/porfolio/game-354-min.jpg 1x,
+                          ./images/porfolio/game-708-min.jpg 2x
+                        "
+                        type="image/jpg"
+                      />
+                      <source
+                        media="(max-width: 767px )"
+                        srcset="
+                          ./images/porfolio/game-450-min.jpg 1x,
+                          ./images/porfolio/game-900-min.jpg 2x
+                        "
+                        type="image/jpg"
+                      />
+
+                      <img
+                        class="project-cards__img"
+                        srcset="
+                          ./images/porfolio/game-370-min.jpg 370w,
+                          ./images/porfolio/game-740-min.jpg 740w,
+                          ./images/porfolio/game-354-min.jpg 354w,
+                          ./images/porfolio/game-708-min.jpg 708w,
+                          ./images/porfolio/game-450-min.jpg 450w,
+                          ./images/porfolio/game-900-min.jpg 900w
+                        "
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
+                        src="./images/porfolio/game-450-min.jpg"
+                        title="Дизайн постеру New Orlean vs Golden Star. Гра двох баскетболістів."
+                        alt="Дизайн постеру New Orlean vs Golden Star. Гра двох баскетболістів."
+                        width="370"
+                        height="294"
+                      />
+                    </picture>
                     <p class="project-cards__overlay">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -283,14 +338,50 @@
               <li class="project-cards__item">
                 <a class="project-cards__link link" href="#">
                   <div class="project-cards__thumb-overlay">
-                    <img
-                      class="project-cards__img"
-                      src="./images/portfolio/restoraunt.jpg"
-                      title="Логотип додатку ресторану морської їжі"
-                      alt="Логотип додатку ресторану морської їжі"
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <source
+                        media="(min-width: 1200px )"
+                        srcset="
+                          ./images/porfolio/seafood-370-min.jpg 1x,
+                          ./images/porfolio/seafood-740-min.jpg 2x
+                        "
+                        type="image/jpg"
+                      />
+                      <source
+                        media="(min-width: 768px )"
+                        srcset="
+                          ./images/porfolio/seafood-354-min.jpg 1x,
+                          ./images/porfolio/seafood-708-min.jpg 2x
+                        "
+                        type="image/jpg"
+                      />
+                      <source
+                        media="(max-width: 767px )"
+                        srcset="
+                          ./images/porfolio/seafood-450-min.jpg 1x,
+                          ./images/porfolio/seafood-900-min.jpg 2x
+                        "
+                        type="image/jpg"
+                      />
+
+                      <img
+                        class="project-cards__img"
+                        srcset="
+                          ./images/porfolio/seafood-370-min.jpg 370w,
+                          ./images/porfolio/seafood-740-min.jpg 740w,
+                          ./images/porfolio/seafood-354-min.jpg 354w,
+                          ./images/porfolio/seafood-708-min.jpg 708w,
+                          ./images/porfolio/seafood-450-min.jpg 450w,
+                          ./images/porfolio/seafood-900-min.jpg 900w
+                        "
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
+                        src="./images/porfolio/seafood-450-min.jpg"
+                        title="Логотип додатку ресторану морської їжі"
+                        alt="Логотип додатку ресторану морської їжі"
+                        width="370"
+                        height="294"
+                      />
+                    </picture>
                     <p class="project-cards__overlay">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -307,14 +398,50 @@
               <li class="project-cards__item">
                 <a class="project-cards__link link" href="#">
                   <div class="project-cards__thumb-overlay">
-                    <img
-                      class="project-cards__img"
-                      src="./images/portfolio/prime.jpg"
-                      title="Накладні бездротові чорні навушники"
-                      alt="Накладні бездротові чорні навушники"
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <source
+                        media="(min-width: 1200px )"
+                        srcset="
+                          ./images/porfolio/headphone-370-min.jpg 1x,
+                          ./images/porfolio/headphone-740-min.jpg 2x
+                        "
+                        type="image/jpg"
+                      />
+                      <source
+                        media="(min-width: 768px )"
+                        srcset="
+                          ./images/porfolio/headphone-354-min.jpg 1x,
+                          ./images/porfolio/headphone-708-min.jpg 2x
+                        "
+                        type="image/jpg"
+                      />
+                      <source
+                        media="(max-width: 767px )"
+                        srcset="
+                          ./images/porfolio/headphone-450-min.jpg 1x,
+                          ./images/porfolio/headphone-900-min.jpg 2x
+                        "
+                        type="image/jpg"
+                      />
+
+                      <img
+                        class="project-cards__img"
+                        srcset="
+                          ./images/porfolio/headphone-370-min.jpg 370w,
+                          ./images/porfolio/headphone-740-min.jpg 740w,
+                          ./images/porfolio/headphone-354-min.jpg 354w,
+                          ./images/porfolio/headphone-708-min.jpg 708w,
+                          ./images/porfolio/headphone-450-min.jpg 450w,
+                          ./images/porfolio/headphone-900-min.jpg 900w
+                        "
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
+                        src="./images/porfolio/headphone-450-min.jpg"
+                        title="Накладні бездротові чорні навушники"
+                        alt="Накладні бездротові чорні навушники"
+                        width="370"
+                        height="294"
+                      />
+                    </picture>
                     <p class="project-cards__overlay">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -331,14 +458,50 @@
               <li class="project-cards__item">
                 <a class="project-cards__link link" href="#">
                   <div class="project-cards__thumb-overlay">
-                    <img
-                      class="project-cards__img"
-                      src="./images/portfolio/boxes.jpg"
-                      title="Дві невеликих дизайнерських коробки: біла та темний беж"
-                      alt="Дві невеликих дизайнерських коробки: біла та темний беж"
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <source
+                        media="(min-width: 1200px )"
+                        srcset="
+                          ./images/porfolio/boxes-370-min.jpg 1x,
+                          ./images/porfolio/boxes-740-min.jpg 2x
+                        "
+                        type="image/jpg"
+                      />
+                      <source
+                        media="(min-width: 768px )"
+                        srcset="
+                          ./images/porfolio/boxes-354-min.jpg 1x,
+                          ./images/porfolio/boxes-708-min.jpg 2x
+                        "
+                        type="image/jpg"
+                      />
+                      <source
+                        media="(max-width: 767px )"
+                        srcset="
+                          ./images/porfolio/boxes-450-min.jpg 1x,
+                          ./images/porfolio/boxes-900-min.jpg 2x
+                        "
+                        type="image/jpg"
+                      />
+
+                      <img
+                        class="project-cards__img"
+                        srcset="
+                          ./images/porfolio/boxes-370-min.jpg 370w,
+                          ./images/porfolio/boxes-740-min.jpg 740w,
+                          ./images/porfolio/boxes-354-min.jpg 354w,
+                          ./images/porfolio/boxes-708-min.jpg 708w,
+                          ./images/porfolio/boxes-450-min.jpg 450w,
+                          ./images/porfolio/boxes-900-min.jpg 900w
+                        "
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
+                        src="./images/porfolio/boxes-450-min.jpg"
+                        title="Дві невеликих дизайнерських коробки: біла та темний беж"
+                        alt="Дві невеликих дизайнерських коробки: біла та темний беж"
+                        width="370"
+                        height="294"
+                      />
+                    </picture>
                     <p class="project-cards__overlay">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -355,14 +518,50 @@
               <li class="project-cards__item">
                 <a class="project-cards__link link" href="#">
                   <div class="project-cards__thumb-overlay">
-                    <img
-                      class="project-cards__img"
-                      src="./images/portfolio/inspiration.jpg"
-                      title="Веб-сайт на экрані монітору"
-                      alt="Веб-сайт на экрані монітору"
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <source
+                        media="(min-width: 1200px )"
+                        srcset="
+                          ./images/porfolio/monitor-370-min.jpg 1x,
+                          ./images/porfolio/monitor-740-min.jpg 2x
+                        "
+                        type="image/jpg"
+                      />
+                      <source
+                        media="(min-width: 768px )"
+                        srcset="
+                          ./images/porfolio/monitor-354-min.jpg 1x,
+                          ./images/porfolio/monitor-708-min.jpg 2x
+                        "
+                        type="image/jpg"
+                      />
+                      <source
+                        media="(max-width: 767px )"
+                        srcset="
+                          ./images/porfolio/monitor-450-min.jpg 1x,
+                          ./images/porfolio/monitor-900-min.jpg 2x
+                        "
+                        type="image/jpg"
+                      />
+
+                      <img
+                        class="project-cards__img"
+                        srcset="
+                          ./images/porfolio/monitor-370-min.jpg 370w,
+                          ./images/porfolio/monitor-740-min.jpg 740w,
+                          ./images/porfolio/monitor-354-min.jpg 354w,
+                          ./images/porfolio/monitor-708-min.jpg 708w,
+                          ./images/porfolio/monitor-450-min.jpg 450w,
+                          ./images/porfolio/monitor-900-min.jpg 900w
+                        "
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
+                        src="./images/porfolio/monitor-450-min.jpg"
+                        title="Веб-сайт на экрані монітору"
+                        alt="Веб-сайт на экрані монітору"
+                        width="370"
+                        height="294"
+                      />
+                    </picture>
                     <p class="project-cards__overlay">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -379,14 +578,50 @@
               <li class="project-cards__item">
                 <a class="project-cards__link link" href="#">
                   <div class="project-cards__thumb-overlay">
-                    <img
-                      class="project-cards__img"
-                      src="./images/portfolio/magazine.jpg"
-                      title="Розворот журналу"
-                      alt="Розворот журналу"
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <source
+                        media="(min-width: 1200px )"
+                        srcset="
+                          ./images/porfolio/journal-370-min.jpg 1x,
+                          ./images/porfolio/journal-740-min.jpg 2x
+                        "
+                        type="image/jpg"
+                      />
+                      <source
+                        media="(min-width: 768px )"
+                        srcset="
+                          ./images/porfolio/journal-354-min.jpg 1x,
+                          ./images/porfolio/journal-708-min.jpg 2x
+                        "
+                        type="image/jpg"
+                      />
+                      <source
+                        media="(max-width: 767px )"
+                        srcset="
+                          ./images/porfolio/journal-450-min.jpg 1x,
+                          ./images/porfolio/journal-900-min.jpg 2x
+                        "
+                        type="image/jpg"
+                      />
+
+                      <img
+                        class="project-cards__img"
+                        srcset="
+                          ./images/porfolio/journal-370-min.jpg 370w,
+                          ./images/porfolio/journal-740-min.jpg 740w,
+                          ./images/porfolio/journal-354-min.jpg 354w,
+                          ./images/porfolio/journal-708-min.jpg 708w,
+                          ./images/porfolio/journal-450-min.jpg 450w,
+                          ./images/porfolio/journal-900-min.jpg 900w
+                        "
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
+                        src="./images/porfolio/journal-450-min.jpg"
+                        title="Розворот журналу"
+                        alt="Розворот журналу"
+                        width="370"
+                        height="294"
+                      />
+                    </picture>
                     <p class="project-cards__overlay">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -403,14 +638,50 @@
               <li class="project-cards__item">
                 <a class="project-cards__link link" href="#">
                   <div class="project-cards__thumb-overlay">
-                    <img
-                      class="project-cards__img"
-                      src="./images/portfolio/lab.jpg"
-                      title="Біла бірка з надписом Lab El Tag"
-                      alt="Біла бірка з надписом Lab El Tag"
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <source
+                        media="(min-width: 1200px )"
+                        srcset="
+                          ./images/porfolio/label-370-min.jpg 1x,
+                          ./images/porfolio/label-740-min.jpg 2x
+                        "
+                        type="image/jpg"
+                      />
+                      <source
+                        media="(min-width: 768px )"
+                        srcset="
+                          ./images/porfolio/label-354-min.jpg 1x,
+                          ./images/porfolio/label-708-min.jpg 2x
+                        "
+                        type="image/jpg"
+                      />
+                      <source
+                        media="(max-width: 767px )"
+                        srcset="
+                          ./images/porfolio/label-450-min.jpg 1x,
+                          ./images/porfolio/label-900-min.jpg 2x
+                        "
+                        type="image/jpg"
+                      />
+
+                      <img
+                        class="project-cards__img"
+                        srcset="
+                          ./images/porfolio/label-370-min.jpg 370w,
+                          ./images/porfolio/label-740-min.jpg 740w,
+                          ./images/porfolio/label-354-min.jpg 354w,
+                          ./images/porfolio/label-708-min.jpg 708w,
+                          ./images/porfolio/label-450-min.jpg 450w,
+                          ./images/porfolio/label-900-min.jpg 900w
+                        "
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
+                        src="./images/porfolio/label-450-min.jpg"
+                        title="Біла бірка з надписом Lab El Tag"
+                        alt="Біла бірка з надписом Lab El Tag"
+                        width="370"
+                        height="294"
+                      />
+                    </picture>
                     <p class="project-cards__overlay">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -427,14 +698,50 @@
               <li class="project-cards__item">
                 <a class="project-cards__link link" href="#">
                   <div class="project-cards__thumb-overlay">
-                    <img
-                      class="project-cards__img"
-                      src="./images/portfolio/business.jpg"
-                      title="Зображення чоловічих рук, які друкують на клавиатурі ноутбука"
-                      alt="Зображення чоловічих рук, які друкують на клавиатурі ноутбука"
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <source
+                        media="(min-width: 1200px )"
+                        srcset="
+                          ./images/porfolio/laptop-370-min.jpg 1x,
+                          ./images/porfolio/laptop-740-min.jpg 2x
+                        "
+                        type="image/jpg"
+                      />
+                      <source
+                        media="(min-width: 768px )"
+                        srcset="
+                          ./images/porfolio/laptop-354-min.jpg 1x,
+                          ./images/porfolio/laptop-708-min.jpg 2x
+                        "
+                        type="image/jpg"
+                      />
+                      <source
+                        media="(max-width: 767px )"
+                        srcset="
+                          ./images/porfolio/laptop-450-min.jpg 1x,
+                          ./images/porfolio/laptop-900-min.jpg 2x
+                        "
+                        type="image/jpg"
+                      />
+
+                      <img
+                        class="project-cards__img"
+                        srcset="
+                          ./images/porfolio/laptop-370-min.jpg 370w,
+                          ./images/porfolio/laptop-740-min.jpg 740w,
+                          ./images/porfolio/laptop-354-min.jpg 354w,
+                          ./images/porfolio/laptop-708-min.jpg 708w,
+                          ./images/porfolio/laptop-450-min.jpg 450w,
+                          ./images/porfolio/laptop-900-min.jpg 900w
+                        "
+                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
+                        src="./images/porfolio/laptop-450-min.jpg"
+                        title="Зображення чоловічих рук, які друкують на клавиатурі ноутбука"
+                        alt="Зображення чоловічих рук, які друкують на клавиатурі ноутбука"
+                        width="370"
+                        height="294"
+                      />
+                    </picture>
                     <p class="project-cards__overlay">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи

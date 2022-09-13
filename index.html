@@ -281,33 +281,48 @@
               <li class="business__item">
                 <img
                   class="business__images"
-                  src="./images/about_us/img1.jpg"
+                  srcset="
+                    ./images/business/desktop-370-min.jpg 1x,
+                    ./images/business/desktop-740-min.jpg 2x
+                  "
+                  src="./images/business/desktop-370-min.jpg"
                   title="Робота за лаптопом"
                   alt="Робота за лаптопом"
                   width="370"
                   height="294"
+                  loading="lazy"
                 />
                 <p class="business__descr centered">Десктопні додатки</p>
               </li>
               <li class="business__item">
                 <img
                   class="business__images"
-                  src="./images/about_us/img2.jpg"
+                  srcset="
+                    ./images/business/mobile-370-min.jpg 1x,
+                    ./images/business/mobile-740-min.jpg 2x
+                  "
+                  src="./images/business/mobile-370-min.jpg"
                   title="Зображення телефонів на екрані лаптопу"
                   alt="Зображення телефонів на екрані лаптопу"
                   width="370"
                   height="294"
+                  loading="lazy"
                 />
                 <p class="business__descr centered">Мобільні додатки</p>
               </li>
               <li class="business__item">
                 <img
                   class="business__images"
-                  src="./images/about_us/img3.jpg"
+                  srcset="
+                    ./images/business/design-370-min.jpg 1x,
+                    ./images/business/design-740-min.jpg 2x
+                  "
+                  src="./images/business/design-370-min.jpg"
                   title="Палітра кольорів на екрані планшету"
                   alt="Палітра кольорів на екрані планшету"
                   width="370"
                   height="294"
+                  loading="lazy"
                 />
                 <p class="business__descr centered">Дизайнерські рішення</p>
               </li>
@@ -326,7 +341,16 @@
               <li class="team__item">
                 <img
                   class="team__images"
-                  src="./images/team/igor.jpg"
+                  srcset="
+                    ./images/team/ihor_270-min.jpg 270w,
+                    ./images/team/ihor_354-min.jpg 354w,
+                    ./images/team/ihor_450-min.jpg 450w,
+                    ./images/team/ihor_540-min.jpg 540w,
+                    ./images/team/ihor_708-min.jpg 708w,
+                    ./images/team/ihor_900-min.jpg 900w
+                  "
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
+                  src="./images/team/ihor_270-min.jpg"
                   title="Ігор Дем'яненко"
                   alt="Ігор Дем'яненко"
                   width="270"
@@ -398,11 +422,21 @@
               <li class="team__item">
                 <img
                   class="team__images"
-                  src="./images/team/olga.jpg"
+                  srcset="
+                    ./images/team/olha_270-min.jpg 270w,
+                    ./images/team/olha_354-min.jpg 354w,
+                    ./images/team/olha_450-min.jpg 450w,
+                    ./images/team/olha_540-min.jpg 540w,
+                    ./images/team/olha_708-min.jpg 708w,
+                    ./images/team/olha_900-min.jpg 900w
+                  "
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
+                  src="./images/team/olha_270-min.jpg"
                   title="Ольга Рєпіна"
                   alt="Ольга Рєпіна"
                   width="270"
                   height="260"
+                  loading="lazy"
                 />
                 <!-- member-content -->
                 <div class="team__content">
@@ -469,11 +503,21 @@
               <li class="team__item">
                 <img
                   class="team__images"
-                  src="./images/team/mykola.jpg"
+                  srcset="
+                    ./images/team/mykola_270-min.jpg 270w,
+                    ./images/team/mykola_354-min.jpg 354w,
+                    ./images/team/mykola_450-min.jpg 450w,
+                    ./images/team/mykola_540-min.jpg 540w,
+                    ./images/team/mykola_708-min.jpg 708w,
+                    ./images/team/mykola_900-min.jpg 900w
+                  "
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
+                  src="./images/team/mykola_270-min.jpg"
                   title="Микола Тарасов"
                   alt="Микола Тарасов"
                   width="270"
                   height="260"
+                  loading="lazy"
                 />
                 <!-- member-content -->
                 <div class="team__content">
@@ -540,11 +584,21 @@
               <li class="team__item">
                 <img
                   class="team__images"
-                  src="./images/team/mykhailo.jpg"
+                  srcset="
+                    ./images/team/mykhailo_270-min.jpg 270w,
+                    ./images/team/mykhailo_354-min.jpg 354w,
+                    ./images/team/mykhailo_450-min.jpg 450w,
+                    ./images/team/mykhailo_540-min.jpg 540w,
+                    ./images/team/mykhailo_708-min.jpg 708w,
+                    ./images/team/mykhailo_900-min.jpg 900w
+                  "
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
+                  src="./images/team/mykhailo_450-min.jpg"
                   title="Михайло Єрмаков"
                   alt="Михайло Єрмаков"
                   width="270"
                   height="260"
+                  loading="lazy"
                 />
                 <!-- member-content -->
                 <div class="team__content">
@@ -612,7 +666,7 @@
         </section>
         <!-- Постійні клієнти -->
         <!-- CLIENTS -->
-        <section class="section centered">
+        <section class="section clients centered">
           <div class="container">
             <h2 class="section__title">Постійні клієнти</h2>
             <!-- section-set display: flex & section-set__item margin-right:30 same for  advantages & business & member-team & clients -->
