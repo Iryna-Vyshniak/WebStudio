@@ -1189,18 +1189,17 @@ body {
 
 .footer__address-content {
   margin-bottom: 60px;
-  text-align: left;
-}
-@media screen and (min-width: 480px) and (max-width: 1199.98px) {
-  .footer__address-content {
-    text-align: center;
-    margin-bottom: 60px;
-  }
+  text-align: center;
 }
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .footer__address-content {
     text-align: center;
     margin-right: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__address-content {
+    text-align: left;
   }
 }
 
