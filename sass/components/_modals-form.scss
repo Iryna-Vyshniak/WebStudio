@@ -161,9 +161,6 @@ height: 40px;
   line-height: 1.2;
   color: $secondary-text-color;
   text-align: left;
-  @media screen and (max-width: $pre-mobile) {
-      font-size: 2.5vw;
-    }
 }
 
 .policy-label__link {

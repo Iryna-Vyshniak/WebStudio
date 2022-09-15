@@ -587,6 +587,7 @@ body {
 
 .header-mobile-contacts__link--tel {
   color: #2196f3;
+  font-weight: 500;
   font-size: 34px;
   font-size: 34px;
 }
@@ -602,6 +603,7 @@ body {
 }
 
 .header-mobile-contacts__link--mail {
+  font-weight: 500;
   color: #757575;
   font-size: 24px;
 }
@@ -1089,13 +1091,21 @@ body {
   fill: currentColor;
 }
 
-.clients__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+@media screen and (min-width: 480px) {
+  .clients__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 479px) {
+  .clients__list {
+    width: 170px;
+    margin: 0 auto;
+  }
 }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (min-width: 480px) and (max-width: 767.98px) {
   .clients__item {
     flex-basis: calc((100% - 30px) / 2);
     margin-right: 30px;
@@ -1277,6 +1287,11 @@ body {
 .footer-signup__subscription {
   margin-right: 12px;
 }
+@media screen and (max-width: 479px) {
+  .footer-signup__subscription {
+    margin-right: 0;
+  }
+}
 
 .footer-signup__form {
   display: flex;
@@ -1292,7 +1307,6 @@ body {
 }
 
 .footer-signup__email {
-  min-width: 358px;
   margin-top: 0;
   margin-bottom: 0;
   height: 50px;
@@ -1306,6 +1320,16 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
+}
+@media screen and (max-width: 479px) {
+  .footer-signup__email {
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 480px) {
+  .footer-signup__email {
+    min-width: 358px;
+  }
 }
 @media screen and (max-width: 1199.98px) {
   .footer-signup__email {
@@ -1566,11 +1590,6 @@ body {
   line-height: 1.2;
   color: #757575;
   text-align: left;
-}
-@media screen and (max-width: 479px) {
-  .agreement {
-    font-size: 2.5vw;
-  }
 }
 
 .policy-label__link {

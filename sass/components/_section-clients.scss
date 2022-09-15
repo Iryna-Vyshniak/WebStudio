@@ -1,11 +1,18 @@
 .clients__list {
     @extend %list;
+    @media screen and (min-width: $mobile) {
     @include setFlexWrap();
     justify-content: center;
+    }
+    @media screen and (max-width: $pre-mobile) {
+           width: 170px;
+           margin: 0 auto;
+    }
 }
 
 .clients__item{
-  @media screen and (max-width: $max-mobile){
+    // margin-right: 0;
+  @media screen and (min-width: $mobile) and (max-width: $max-mobile){
     flex-basis: calc((100% - 1 * 30px) / 2);
     margin-right: 30px;
     margin-bottom: 30px;

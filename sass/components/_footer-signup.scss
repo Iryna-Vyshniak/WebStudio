@@ -15,6 +15,9 @@
 
 .footer-signup__subscription {
     margin-right: 12px;
+    @media screen and (max-width: $pre-mobile) {
+            margin-right: 0;
+        }
 }
 
 .footer-signup__form {
@@ -30,7 +33,6 @@
 }
 
 .footer-signup__email {
-    min-width: 358px;
     margin-top: 0;
     margin-bottom: 0;
 
@@ -48,7 +50,12 @@
     font-size: $primary-font-size;
 
     line-height: 1.2;
-
+    @media screen and (max-width: $pre-mobile) {
+        max-width: 100%;
+    }
+    @media screen and (min-width: $mobile){
+        min-width: 358px;
+        }
     @media screen and (max-width: $max-tablet) {
         margin-bottom: 20px;
     }

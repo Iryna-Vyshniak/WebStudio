@@ -163,6 +163,7 @@
 .header-mobile-contacts__link--tel {
     @extend %link;
     color: $accent-dodger-blue;
+    font-weight: $accent-weight;
     @media screen and (max-width: $pre-mobile) {
         font-size: 5vw;
     }
@@ -176,6 +177,7 @@
 
 .header-mobile-contacts__link--mail{
     @extend %link;
+    font-weight: $accent-weight;
     color: $secondary-text-color;
     @media screen and (max-width: $pre-mobile) {
             font-size: 5vw;
