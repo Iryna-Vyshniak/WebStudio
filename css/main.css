@@ -1523,6 +1523,7 @@ body {
 }
 
 .policy-label {
+  position: relative;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -1550,6 +1551,7 @@ body {
 }
 
 .policy-label__icon {
+  position: absolute;
   display: flex;
   margin-left: 0;
   margin-right: 5px;
@@ -1775,6 +1777,7 @@ body {
   margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
+  color: #212121;
   line-height: 2;
   letter-spacing: 0.06em;
 }
@@ -1783,6 +1786,7 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   line-height: 1.9;
+  color: #757575;
 }
 
 .project-cards__link:hover .project-cards__overlay, .project-cards__link:focus .project-cards__overlay {

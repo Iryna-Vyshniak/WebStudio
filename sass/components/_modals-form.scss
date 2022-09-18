@@ -97,6 +97,7 @@ height: 40px;
 }
 
 .policy-label {
+  position: relative;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -122,6 +123,7 @@ height: 40px;
 }
 
 .policy-label__icon {
+  position: absolute;
   display: flex;
     margin-left: 0;
     margin-right: 5px;

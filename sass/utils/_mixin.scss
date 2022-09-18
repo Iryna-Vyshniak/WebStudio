@@ -1,7 +1,7 @@
 // .section-set
-@mixin sectionSetFlex($type: flex, $wrap: wrap){
-            display: $type;
-            flex-wrap: $wrap;
+@mixin sectionSetFlex($type: flex, $wrap: wrap) {
+    display: $type;
+    flex-wrap: $wrap;
 }
 
 
@@ -11,7 +11,7 @@
 }
 
 
-@mixin centeredFlex($type: flex, $centered: center){
+@mixin centeredFlex($type: flex, $centered: center) {
     display: $type;
     align-items: $centered;
 }
@@ -22,18 +22,25 @@
     padding-bottom: $size-bottom;
 }
 
- @mixin transition ($duration: 250ms, $timing-function: cubic-bezier(0.4, 0, 0.2, 1)){
-    transition-duration: $duration; 
+@mixin transition ($duration: 250ms, $timing-function: cubic-bezier(0.4, 0, 0.2, 1)) {
+    transition-duration: $duration;
     transition-timing-function: $timing-function;
- }
-
- @mixin circle($width: 44px, $height: 44px, $radius: 50%){
- width: $width;
- height: $height;
- border-radius: $radius;
 }
 
-@mixin animation( $animate-duration: 800ms, $animate-delay: 0.9s){
+@mixin circle($width: 44px, $height: 44px, $radius: 50%) {
+    width: $width;
+    height: $height;
+    border-radius: $radius;
+}
+
+@mixin animation($animate-duration: 800ms, $animate-delay: 0.9s) {
     animation-duration: $animate-duration;
     animation-delay: $animate-delay;
+}
+
+@mixin fonts ($fw, $fz, $lh, $ls) {
+    font-weight: $fw;
+    font-size: $fz+px;
+    line-height: $lh;
+    letter-spacing: $ls+em;
 }
