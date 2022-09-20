@@ -942,30 +942,25 @@
               placeholder="Введіть текст"
             ></textarea>
           </div>
-
-          <label class="policy-label" for="check">
+          <div class="policy">
             <input
-              class="policy-label__checkbox"
+              class="policy__checkbox vissually-hidden"
               type="checkbox"
               name="policy"
-              id="check"
+              id="policy"
               aria-label="Згода з умовами договору"
+              value="true"
             />
-            <svg class="policy-label__icon" width="16" height="15">
-              <use
-                сlass="policy-label__icon-square"
-                href="./images/icons.svg#icon-black-square"
-              ></use>
-              <use
-                class="policy-label__icon-check"
-                href="./images/icons.svg#icon-blue-white-check"
-              ></use>
+            <svg class="policy__icon" width="16" height="15">
+              <use class="policy__icon-square" href="./images/icons.svg#icon-black-square"></use>
+              <use class="policy__icon-check" href="./images/icons.svg#icon-blue-white-check"></use>
             </svg>
-            <span class="agreement">
+            <label class="policy__label" for="policy">
               Погоджуюся з розсилкою та приймаю
-              <a href="#" class="policy-label__link link"> Умови договору</a>
-            </span>
-          </label>
+              <a href="#" class="policy__link link"> Умови договору</a>
+            </label>
+          </div>
+
           <button class="button button--form-button button__main-button" type="submit">
             Відправити
           </button>

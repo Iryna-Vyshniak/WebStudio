@@ -96,84 +96,74 @@ height: 40px;
   }
 }
 
-.policy-label {
-  position: relative;
+// policy agreement
+
+.policy {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
-  margin-top: 0;
-  margin-right: 0;
+  justify-content: flex-start;
   margin-bottom: 30px;
-  @media screen and(min-width: $desktop) {
-    justify-content: center;
-  }
+  @media screen and (min-width: $desktop) {
+      justify-content: center;;
+    }
 }
 
-.policy-label__checkbox {
+.policy__checkbox{
   position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
+      white-space: nowrap;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      border: 0;
+      padding: 0;
+      clip: rect(0 0 0 0);
+      clip-path: inset(50%);
+      margin: -1px;
 }
 
-.policy-label__icon {
-  position: absolute;
-  display: flex;
-    margin-left: 0;
-    margin-right: 5px;
 
+.policy__label {
+  cursor: pointer;
+  font-size: $modal-form-font;
+  line-height: 1.2;
+  color: $secondary-text-color;
+  text-align: left;
   @media screen and (min-width: $desktop){
-    margin-left: 12px;
+    text-align: center;
   }
 }
 
-.policy-label__checkbox:checked + * .policy-label__icon-square {
-    opacity: 0;
-  }
+.policy__icon {
+  display: block;
+  margin-right: 8px;
+}
 
-.policy-label__checkbox:checked + * .policy-label__icon-check {
-   opacity: 1;
-  }
+.policy__icon-square {
+  opacity: 1;
+}
 
+.policy__icon-check {
+  opacity: 0;
+}
 
-.policy-label__icon-square{
-  margin-right: 5px;
+.policy__checkbox:checked + * .policy__icon-square {
+  opacity: 0;
+  @include transition();
+  transition-property: opacity;
+}
+
+.policy__checkbox:checked + * .policy__icon-check {
   opacity: 1;
   @include transition();
   transition-property: opacity;
 }
 
-
-.policy-label__icon-check{
-  margin-right: 5px;
-  opacity: 0; 
-  @include transition();
-  transition-property: opacity;
+.policy__link {
+  position: relative;
+  color: $accent-dodger-blue;;
 }
 
-.agreement{
-  display: block;
-  font-size: $modal-form-font;
-  line-height: 1.2;
-  color: $secondary-text-color;
-  text-align: left;
-}
-
-.policy-label__link {
-   position: relative;
-  display: inline-block;
-  margin-left: 3px;
-  color: $accent-dodger-blue;
-  
-}
-
-.policy-label__link:after {
+.policy__link:after {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -182,9 +172,10 @@ height: 40px;
   width: 100%;
   height: 1px;
   background-color: currentColor;
-  transform: width 0.5s linear;
+  @include transition();
+  transition-property: width;
 }
 
-.policy-label__link:hover:after {
+.policy__link:hover:after {
   width: 0;
 }
