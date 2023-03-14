@@ -225,36 +225,61 @@
         <section class="section">
           <div class="container">
             <h1 class="visually-hidden">Portfolio</h1>
-            <ul class="filter-cards list">
-              <li class="filter-cards__item">
-                <button class="button button-filter" type="button" aria-label="Приклади портфоліо">
+            <ul class="filter-cards list js-filter-cards">
+              <li class="filter-cards__item active" data-id="all">
+                <button
+                  data-id="all"
+                  class="button button-filter"
+                  type="button"
+                  aria-label="Приклади портфоліо"
+                >
                   Усі
                 </button>
               </li>
               <li class="filter-cards__item">
-                <button class="button button-filter" type="button" aria-label="Приклади портфоліо">
+                <button
+                  data-id="web"
+                  class="button button-filter"
+                  type="button"
+                  aria-label="Приклади портфоліо"
+                >
                   Веб-сайти
                 </button>
               </li>
               <li class="filter-cards__item">
-                <button class="button button-filter" type="button" aria-label="Приклади портфоліо">
+                <button
+                  data-id="apps"
+                  class="button button-filter"
+                  type="button"
+                  aria-label="Приклади портфоліо"
+                >
                   Додатки
                 </button>
               </li>
               <li class="filter-cards__item">
-                <button class="button button-filter" type="button" aria-label="Приклади портфоліо">
+                <button
+                  data-id="design"
+                  class="button button-filter"
+                  type="button"
+                  aria-label="Приклади портфоліо"
+                >
                   Дизайн
                 </button>
               </li>
               <li class="filter-cards__item">
-                <button class="button button-filter" type="button" aria-label="Приклади портфоліо">
+                <button
+                  data-id="marketing"
+                  class="button button-filter"
+                  type="button"
+                  aria-label="Приклади портфоліо"
+                >
                   Маркетинг
                 </button>
               </li>
             </ul>
 
             <ul class="project-cards list">
-              <li class="project-cards__item">
+              <li class="project-cards__item web">
                 <a class="project-cards__link link" href="#">
                   <div class="project-cards__thumb-overlay">
                     <picture>
@@ -312,7 +337,7 @@
                   </div>
                 </a>
               </li>
-              <li class="project-cards__item">
+              <li class="project-cards__item design">
                 <a class="project-cards__link link" href="#">
                   <div class="project-cards__thumb-overlay">
                     <picture>
@@ -332,6 +357,7 @@
                         "
                         type="image/jpg"
                       />
+
                       <source
                         media="(max-width: 767px)"
                         srcset="
@@ -357,13 +383,15 @@
                     </p>
                   </div>
                   <div class="project-cards__content">
-                    <h2 class="project-cards__title">Постер New Orlean vs Golden Star</h2>
+                    <h2 class="project-cards__title project-cards__title--long">
+                      Постер New Orlean vs Golden Star
+                    </h2>
                     <p class="project-cards__description">Дизайн</p>
                   </div>
                 </a>
               </li>
 
-              <li class="project-cards__item">
+              <li class="project-cards__item apps">
                 <a class="project-cards__link link" href="#">
                   <div class="project-cards__thumb-overlay">
                     <picture>
@@ -414,7 +442,7 @@
                 </a>
               </li>
 
-              <li class="project-cards__item">
+              <li class="project-cards__item marketing">
                 <a class="project-cards__link link" href="#">
                   <div class="project-cards__thumb-overlay">
                     <picture>
@@ -465,7 +493,7 @@
                 </a>
               </li>
 
-              <li class="project-cards__item">
+              <li class="project-cards__item apps">
                 <a class="project-cards__link link" href="#">
                   <div class="project-cards__thumb-overlay">
                     <picture>
@@ -516,7 +544,7 @@
                 </a>
               </li>
 
-              <li class="project-cards__item">
+              <li class="project-cards__item web">
                 <a class="project-cards__link link" href="#">
                   <div class="project-cards__thumb-overlay">
                     <picture>
@@ -567,7 +595,7 @@
                 </a>
               </li>
 
-              <li class="project-cards__item">
+              <li class="project-cards__item design">
                 <a class="project-cards__link link" href="#">
                   <div class="project-cards__thumb-overlay">
                     <picture>
@@ -618,7 +646,7 @@
                 </a>
               </li>
 
-              <li class="project-cards__item">
+              <li class="project-cards__item marketing">
                 <a class="project-cards__link link" href="#">
                   <div class="project-cards__thumb-overlay">
                     <picture>
@@ -669,7 +697,7 @@
                 </a>
               </li>
 
-              <li class="project-cards__item">
+              <li class="project-cards__item apps">
                 <a class="project-cards__link link" href="#">
                   <div class="project-cards__thumb-overlay">
                     <picture>
@@ -854,5 +882,6 @@
     ></script>
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/filter.js" type="module"></script>
   </body>
 </html>
