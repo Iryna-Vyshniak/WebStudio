@@ -1,17 +1,18 @@
 .footer-socials {
-  @media screen and (max-width: $max-tablet){
+  @media screen and (max-width: $max-tablet) {
     text-align: center;
     margin-bottom: 60px;
   }
-//  @media screen and (max-width: $max-tablet) {
-//   text-align: center;
-//   // margin-left: auto;
-//  }
 
-@media screen and(min-width: $desktop) {
-  margin-left: 70px;
-}
-  
+  //  @media screen and (max-width: $max-tablet) {
+  //   text-align: center;
+  //   // margin-left: auto;
+  //  }
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 70px;
+  }
+
 }
 
 // приєднуйтесь 
@@ -19,12 +20,14 @@
   margin-top: 0;
   margin-bottom: 20px;
   color: $white-color;
-@media screen and (max-width: $max-tablet) {
+
+  @media screen and (max-width: $max-tablet) {
     text-align: center;
   }
-@media screen and(min-width: $desktop) {
-  text-align: left;
-}
+
+  @media screen and (min-width: $desktop) {
+    text-align: left;
+  }
 }
 
 .footer-socials__link {

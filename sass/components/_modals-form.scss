@@ -50,8 +50,8 @@
 }
 
 .form__input {
-width: 100%;
-height: 40px;
+  width: 100%;
+  height: 40px;
   padding: 11px 12px;
   padding-left: 42px;
   border: 1px solid $modal-form-border;
@@ -73,7 +73,7 @@ height: 40px;
   &:not(:placeholder-shown) + .form__label {
     color: $accent-dodger-blue;
     @include transition();
-      transition-property: color;
+    transition-property: color;
   }
 }
 
@@ -103,22 +103,24 @@ height: 40px;
   align-items: center;
   justify-content: flex-start;
   margin-bottom: 30px;
+
   @media screen and (min-width: $desktop) {
-      justify-content: center;;
-    }
+    justify-content: center;
+    ;
+  }
 }
 
-.policy__checkbox{
+.policy__checkbox {
   position: absolute;
-      white-space: nowrap;
-      width: 1px;
-      height: 1px;
-      overflow: hidden;
-      border: 0;
-      padding: 0;
-      clip: rect(0 0 0 0);
-      clip-path: inset(50%);
-      margin: -1px;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 
@@ -128,7 +130,8 @@ height: 40px;
   line-height: 1.2;
   color: $secondary-text-color;
   text-align: left;
-  @media screen and (min-width: $desktop){
+
+  @media screen and (min-width: $desktop) {
     text-align: center;
   }
 }
@@ -160,7 +163,8 @@ height: 40px;
 
 .policy__link {
   position: relative;
-  color: $accent-dodger-blue;;
+  color: $accent-dodger-blue;
+  text-decoration: none;
 }
 
 .policy__link:after {
